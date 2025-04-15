@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreasureBot - CLUQ AI SOLUTIONS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Particles.js library for the interactive background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Project Page Styles */
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .section-icon {
+            font-size: 18px;
+            margin-right: 8px;
+            color: var(--accent-color);
+            vertical-align: middle;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+        }
+        
+        .card-header h3 {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        
+        .project-content {
+            padding: 0 10px;
+        }
+        
+        .project-content p {
+            margin: 0.5em 0;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        
+        .key-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .key-metric {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+        
+        .key-metric i {
+            font-size: 16px;
+            margin-right: 8px;
+            color: var(--accent-color);
+            width: 18px;
+            text-align: center;
+            margin-top: 2px;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .tech-tag {
+            background: rgba(var(--accent-color-rgb), 0.15);
+            border: 1px solid var(--accent-color);
+            border-radius: 15px;
+            padding: 3px 10px;
+            font-size: 0.8em;
+        }
+        
+        .project-overview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .two-column-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .project-header img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .project-overview,
+            .key-metrics,
+            .two-column-section {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="page-hero">
+        <div id="particles-js" class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="animate-fade">TreasureBot</h1>
+            <p class="animate-fade">AI-powered product discovery bot</p>
+        </div>
+    </section>
+    
+    <main>
+        <section class="project-detail">
+            <div class="project-header">
+                <img src="../assets/Treasurebot.png" alt="TreasureBot" class="project-image">
+            </div>
+            
+            <div class="project-content">
+                <!-- About Card -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-info-circle section-icon"></i>
+                        <h3>Overview</h3>
+                    </div>
+                    <p>An intelligent product discovery system using advanced AI to help users find exactly what they're looking for, even with imprecise queries, transforming the e-commerce search experience.</p>
+                </div>
+                
+                <!-- Project Overview Section with Challenge and Solution -->
+                <div class="project-overview">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-exclamation-triangle section-icon"></i>
+                            <h3>The Challenge</h3>
+                        </div>
+                        <p>Traditional e-commerce search often fails when users don't know exact terminology for products or have complex requirements, leading to frustrated customers and missed sales.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-lightbulb section-icon"></i>
+                            <h3>Our Solution</h3>
+                        </div>
+                        <p>TreasureBot bridges this gap by understanding natural language, inferring intent, and connecting users with products that match their needs, even if search terms don't directly match product descriptions.</p>
+                    </div>
+                </div>
+                
+                <!-- Two Column Layout for Features and Impact -->
+                <div class="two-column-section">
+                    <!-- Key Features -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-star section-icon"></i>
+                            <h3>Key Features</h3>
+                        </div>
+                        <div class="key-metrics">
+                            <div class="key-metric">
+                                <i class="fas fa-comments"></i>
+                                <span>Natural language search</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-eye"></i>
+                                <span>Visual search capabilities</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-user-check"></i>
+                                <span>Personalized recommendations</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-random"></i>
+                                <span>Cross-category matching</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-heart"></i>
+                                <span>Sentiment analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Impact Section -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line section-icon"></i>
+                            <h3>Impact</h3>
+                        </div>
+                        <div class="key-metrics">
+                            <div class="key-metric">
+                                <i class="fas fa-search"></i>
+                                <span><strong>37%</strong> increase in discovery</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span><strong>28%</strong> fewer abandoned searches</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-smile"></i>
+                                <span><strong>53%</strong> higher satisfaction</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span><strong>22%</strong> better conversion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technologies Used -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-code section-icon"></i>
+                        <h3>Technologies</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fas fa-comment-alt"></i> NLP</span>
+                        <span class="tech-tag"><i class="fas fa-camera"></i> Computer Vision</span>
+                        <span class="tech-tag"><i class="fas fa-brain"></i> Machine Learning</span>
+                        <span class="tech-tag"><i class="fas fa-cubes"></i> Recommendation Systems</span>
+                        <span class="tech-tag"><i class="fas fa-comment-dots"></i> Sentiment Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-main">
+            <div class="footer-info">
+                <h3>CLUQ AI SOLUTIONS</h3>
+                <p>Email: team@cluq.eu</p>
+                <p>VAT Number: Coming Soon</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../agb.html">AGB</a></li>
+                    <li><a href="../impressum.html">Impressum</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
