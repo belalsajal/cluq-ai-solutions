@@ -18,6 +18,12 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -31,120 +37,91 @@
     </section>
     
     <main>
-        <!-- Project preview cards section -->
         <section class="project-previews">
             <h2>Our AI Projects</h2>
-            <div class="project-previews-container">
-                <a href="projects/treasurebot.html" class="project-card" data-project-id="0">
-                    <div class="card-header">
-                        <img src="assets/Treasurebot.png" alt="TreasureBot">
+            <div class="portfolio-grid">
+                <a href="projects/treasurebot.html" class="portfolio-item reveal-on-scroll">
+                    <img src="assets/Treasurebot.png" alt="TreasureBot">
+                    <div class="portfolio-item-content">
                         <h3>TreasureBot</h3>
                         <p>AI-powered waste management system</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-details">
-                            <h4>About This Project</h4>
-                            <p>AI-powered autonomous waste sorting smart bin and collection unit designed to redefine urban waste management with smart detection, robotic sorting, and real-time analytics.</p>
-                            <div class="project-tags">
-                                <span class="tag">AI</span>
-                                <span class="tag">Robotics</span>
-                                <span class="tag">Sustainability</span>
-                            </div>
+                        <div class="portfolio-tech-tags">
+                            <span class="portfolio-tech-tag"><i class="fas fa-robot"></i> Robotics</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-camera"></i> Computer Vision</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> Machine Learning</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-network-wired"></i> IoT</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-mobile-alt"></i> Mobile App</span>
                         </div>
                     </div>
                 </a>
                 
-                <a href="projects/fashionai.html" class="project-card" data-project-id="1">
-                    <div class="card-header">
-                        <img src="assets/fassionai.png" alt="Fashion AI">
+                <a href="projects/fashionai.html" class="portfolio-item reveal-on-scroll">
+                    <img src="assets/fassionai.png" alt="Fashion AI">
+                    <div class="portfolio-item-content">
                         <h3>Fashion AI</h3>
-                        <p>AI-powered personal fashion assistant</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-details">
-                            <h4>About This Project</h4>
-                            <p>AI-powered fashion assistant that provides personalized outfit recommendations and lets users visualize looks on a custom avatar with real-time price comparisons.</p>
-                            <div class="project-tags">
-                                <span class="tag">AI</span>
-                                <span class="tag">Fashion</span>
-                                <span class="tag">AR</span>
-                            </div>
+                        <p>AI-powered fashion recommendation platform</p>
+                        <div class="portfolio-tech-tags">
+                            <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-camera"></i> Computer Vision</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-glasses"></i> AR</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-cogs"></i> Machine Learning</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-thumbs-up"></i> Recommendation Systems</span>
                         </div>
                     </div>
                 </a>
                 
-                <a href="projects/maximizecv.html" class="project-card" data-project-id="2">
-                    <div class="card-header">
-                        <img src="assets/Tailoredapply.png" alt="MaximizeCV">
-                        <h3>MaximizeCV</h3>
+                <a href="projects/maximizecv.html" class="portfolio-item reveal-on-scroll">
+                    <img src="assets/Tailoredapply.png" alt="Maximize CV">
+                    <div class="portfolio-item-content">
+                        <h3>Maximize CV</h3>
                         <p>Resume & cover letter generator</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-details">
-                            <h4>About This Project</h4>
-                            <p>Web application that helps job seekers create tailored resumes and cover letters using AI, optimized for specific roles to increase interview chances.</p>
-                            <div class="project-tags">
-                                <span class="tag">AI</span>
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Career Tools</span>
-                            </div>
+                        <div class="portfolio-tech-tags">
+                            <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-language"></i> NLP</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-file-alt"></i> Document Processing</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-edit"></i> Content Generation</span>
                         </div>
                     </div>
                 </a>
                 
-                <a href="projects/globalpickups.html" class="project-card" data-project-id="3">
-                    <div class="card-header">
-                        <img src="assets/globalpickups.png" alt="Global Pickups">
+                <a href="projects/globalpickups.html" class="portfolio-item reveal-on-scroll">
+                    <img src="assets/globalpickups.png" alt="Global Pickups">
+                    <div class="portfolio-item-content">
                         <h3>Global Pickups</h3>
-                        <p>Peer-to-peer delivery platform</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-details">
-                            <h4>About This Project</h4>
-                            <p>A community-based delivery platform connecting travelers with people who need items delivered, creating an eco-friendly alternative to traditional shipping.</p>
-                            <div class="project-tags">
-                                <span class="tag">Community</span>
-                                <span class="tag">Logistics</span>
-                                <span class="tag">Sustainability</span>
-                            </div>
+                        <p>Travel rewards and shopping platform</p>
+                        <div class="portfolio-tech-tags">
+                            <span class="portfolio-tech-tag"><i class="fas fa-map-marker-alt"></i> Geolocation</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-shopping-cart"></i> E-commerce</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-plane"></i> Travel Tech</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-database"></i> Big Data</span>
                         </div>
                     </div>
                 </a>
                 
-                <a href="projects/anmeldungdigital.html" class="project-card" data-project-id="4">
-                    <div class="card-header">
-                        <img src="assets/Anmeldungassist.png" alt="Anmeldung Digital">
-                        <h3>Anmeldung Digital</h3>
-                        <p>Digital address registration</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-details">
-                            <h4>About This Project</h4>
-                            <p>Digital solution that simplifies the address registration process in Germany, using AI to facilitate document preparation and appointment booking.</p>
-                            <div class="project-tags">
-                                <span class="tag">AI</span>
-                                <span class="tag">Public Services</span>
-                                <span class="tag">Document Processing</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="projects/personaldataplatform.html" class="project-card" data-project-id="5">
-                    <div class="card-header">
-                        <img src="assets/personaldata.png" alt="Personal Data Platform">
+                <a href="projects/personaldataplatform.html" class="portfolio-item reveal-on-scroll">
+                    <img src="assets/personaldata.png" alt="Personal Data Platform">
+                    <div class="portfolio-item-content">
                         <h3>Personal Data Platform</h3>
-                        <p>Take control of your data</p>
+                        <p>Secure personal data management system</p>
+                        <div class="portfolio-tech-tags">
+                            <span class="portfolio-tech-tag"><i class="fas fa-shield-alt"></i> Security</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-lock"></i> Encryption</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-database"></i> Data Storage</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-exchange-alt"></i> Data Portability</span>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <div class="card-details">
-                            <h4>About This Project</h4>
-                            <p>A platform empowering users to control, monetize, and protect their personal data while offering tools to manage digital privacy across various services.</p>
-                            <div class="project-tags">
-                                <span class="tag">Data Privacy</span>
-                                <span class="tag">Blockchain</span>
-                                <span class="tag">Security</span>
-                            </div>
+                </a>
+                
+                <a href="projects/anmeldungdigital.html" class="portfolio-item reveal-on-scroll">
+                    <img src="assets/Anmeldungassist.png" alt="Anmeldung Digital">
+                    <div class="portfolio-item-content">
+                        <h3>Anmeldung Digital</h3>
+                        <p>AI-powered digital registration system</p>
+                        <div class="portfolio-tech-tags">
+                            <span class="portfolio-tech-tag"><i class="fas fa-file-invoice"></i> OCR</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-comment-alt"></i> NLP</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-lock"></i> Secure Authentication</span>
+                            <span class="portfolio-tech-tag"><i class="fas fa-link"></i> Blockchain</span>
                         </div>
                     </div>
                 </a>
@@ -167,7 +144,6 @@
             <div class="footer-info">
                 <h3>CLUQ AI SOLUTIONS</h3>
                 <p>Email: team@cluq.eu</p>
-                <p>VAT Number: Coming Soon</p>
             </div>
             <div class="footer-links">
                 <ul>

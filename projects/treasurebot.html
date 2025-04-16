@@ -11,50 +11,59 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Project Page Styles */
         .project-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: #ffffff;
             border-radius: 8px;
-            padding: 15px;
+            padding: 20px;
             margin-bottom: 20px;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .project-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
         .section-icon {
-            font-size: 18px;
-            margin-right: 8px;
-            color: var(--accent-color);
-            vertical-align: middle;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            margin-right: 12px;
+            font-size: 16px;
         }
         
         .card-header {
             display: flex;
             align-items: center;
-            margin-bottom: 8px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 8px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding-bottom: 12px;
         }
         
         .card-header h3 {
             margin: 0;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            color: #333333;
+            font-weight: 600;
         }
         
         .project-content {
-            padding: 0 10px;
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .project-content p {
             margin: 0.5em 0;
             font-size: 0.95em;
-            line-height: 1.4;
+            line-height: 1.5;
+            color: #444444;
         }
         
         .key-metrics {
@@ -68,15 +77,20 @@
             align-items: flex-start;
             margin-bottom: 8px;
             font-size: 0.9em;
+            color: #444444;
         }
         
         .key-metric i {
-            font-size: 16px;
-            margin-right: 8px;
-            color: var(--accent-color);
-            width: 18px;
-            text-align: center;
-            margin-top: 2px;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: rgba(0, 123, 255, 0.1);
+            color: #007bff;
+            margin-right: 10px;
+            font-size: 14px;
         }
         
         .tech-tags {
@@ -87,28 +101,49 @@
         }
         
         .tech-tag {
-            background: rgba(var(--accent-color-rgb), 0.15);
-            border: 1px solid var(--accent-color);
+            background: rgba(0, 123, 255, 0.08);
+            border: 1px solid rgba(0, 123, 255, 0.3);
             border-radius: 15px;
-            padding: 3px 10px;
+            padding: 4px 10px;
             font-size: 0.8em;
+            color: #007bff;
         }
         
         .project-overview {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            margin-bottom: 20px;
         }
         
         .two-column-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .project-header {
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .project-header img {
             max-height: 300px;
+            width: 100%;
             object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Make project detail section more compact */
+        .project-detail {
+            padding-top: 0;
+        }
+        
+        .page-hero {
+            padding-bottom: 16px;
         }
         
         @media (max-width: 768px) {
@@ -123,20 +158,48 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../portfolio.html">Portfolio</a></li>
-                <li><a href="../about.html">About</a></li>
+        <div class="navbar">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-name">CLUQ AI</span>
+            </a>
+            
+            <button class="hamburger" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a href="../portfolio.html" class="nav-link active">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="../projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
+                        <a href="../projects/fashionai.html" class="dropdown-item">Fashion AI</a>
+                        <a href="../projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
+                        <a href="../projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
+                        <a href="../projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
+                        <a href="../projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
-        </nav>
+        </div>
     </header>
     
     <section class="page-hero">
         <div id="particles-js" class="hero-background"></div>
         <div class="hero-content">
             <h1 class="animate-fade">TreasureBot</h1>
-            <p class="animate-fade">AI-powered product discovery bot</p>
+            <p class="animate-fade">AI-powered autonomous waste management system</p>
         </div>
     </section>
     
@@ -150,28 +213,34 @@
                 <!-- About Card -->
                 <div class="project-card">
                     <div class="card-header">
-                        <i class="fas fa-info-circle section-icon"></i>
+                        <div class="section-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
                         <h3>Overview</h3>
                     </div>
-                    <p>An intelligent product discovery system using advanced AI to help users find exactly what they're looking for, even with imprecise queries, transforming the e-commerce search experience.</p>
+                    <p>TreasureBot is an AI-powered autonomous waste sorting and collection unit designed to revolutionize urban waste management. Combining smart detection, robotic sorting, real-time data analytics, and user interaction, TreasureBot reduces human error, boosts recycling rates, and offers data-driven insights to cities and private facilities.</p>
                 </div>
                 
                 <!-- Project Overview Section with Challenge and Solution -->
                 <div class="project-overview">
                     <div class="project-card">
                         <div class="card-header">
-                            <i class="fas fa-exclamation-triangle section-icon"></i>
-                            <h3>The Challenge</h3>
+                            <div class="section-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h3>Objectives</h3>
                         </div>
-                        <p>Traditional e-commerce search often fails when users don't know exact terminology for products or have complex requirements, leading to frustrated customers and missed sales.</p>
+                        <p>Enhance waste sorting efficiency in public and private spaces, reduce contamination rates in recycling streams, provide real-time data for municipalities and facility operators, and encourage public engagement in proper waste disposal through a user app.</p>
                     </div>
                     
                     <div class="project-card">
                         <div class="card-header">
-                            <i class="fas fa-lightbulb section-icon"></i>
-                            <h3>Our Solution</h3>
+                            <div class="section-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Target Market</h3>
                         </div>
-                        <p>TreasureBot bridges this gap by understanding natural language, inferring intent, and connecting users with products that match their needs, even if search terms don't directly match product descriptions.</p>
+                        <p>Public Sector (city authorities, municipalities), Private Sector (airports, malls, universities, hospitals, schools), and Licensing Partners (industrial recycling centers for AI-sorting model deployment).</p>
                     </div>
                 </div>
                 
@@ -180,29 +249,31 @@
                     <!-- Key Features -->
                     <div class="project-card">
                         <div class="card-header">
-                            <i class="fas fa-star section-icon"></i>
+                            <div class="section-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
                             <h3>Key Features</h3>
                         </div>
                         <div class="key-metrics">
                             <div class="key-metric">
-                                <i class="fas fa-comments"></i>
-                                <span>Natural language search</span>
-                            </div>
-                            <div class="key-metric">
                                 <i class="fas fa-eye"></i>
-                                <span>Visual search capabilities</span>
+                                <span>Smart Waste Detection</span>
                             </div>
                             <div class="key-metric">
-                                <i class="fas fa-user-check"></i>
-                                <span>Personalized recommendations</span>
+                                <i class="fas fa-robot"></i>
+                                <span>Robotic Precision Sorting</span>
                             </div>
                             <div class="key-metric">
-                                <i class="fas fa-random"></i>
-                                <span>Cross-category matching</span>
+                                <i class="fas fa-route"></i>
+                                <span>Autonomous Navigation</span>
                             </div>
                             <div class="key-metric">
-                                <i class="fas fa-heart"></i>
-                                <span>Sentiment analysis</span>
+                                <i class="fas fa-network-wired"></i>
+                                <span>IoT Integration</span>
+                            </div>
+                            <div class="key-metric">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>User Application Interface</span>
                             </div>
                         </div>
                     </div>
@@ -210,42 +281,64 @@
                     <!-- Impact Section -->
                     <div class="project-card">
                         <div class="card-header">
-                            <i class="fas fa-chart-line section-icon"></i>
-                            <h3>Impact</h3>
+                            <div class="section-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Impact Metrics</h3>
                         </div>
                         <div class="key-metrics">
                             <div class="key-metric">
-                                <i class="fas fa-search"></i>
-                                <span><strong>37%</strong> increase in discovery</span>
+                                <i class="fas fa-recycle"></i>
+                                <span><strong>60%</strong> reduced contamination rate</span>
                             </div>
                             <div class="key-metric">
-                                <i class="fas fa-thumbs-up"></i>
-                                <span><strong>28%</strong> fewer abandoned searches</span>
+                                <i class="fas fa-coins"></i>
+                                <span><strong>30%</strong> operational cost savings</span>
                             </div>
                             <div class="key-metric">
-                                <i class="fas fa-smile"></i>
-                                <span><strong>53%</strong> higher satisfaction</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span><strong>22%</strong> better conversion</span>
+                                <i class="fas fa-users"></i>
+                                <span><strong>10k+</strong> monthly active users</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Innovation Highlights -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div class="section-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation Highlights</h3>
+                    </div>
+                    <p>First-of-its-kind public waste station with fully autonomous sorting. Modular design enables scalable deployment in varied environments. Real-time insights and predictive maintenance enabled via IoT.</p>
+                </div>
+                
+                <!-- Sustainability & SDG Impact -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div class="section-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sustainability Impact</h3>
+                    </div>
+                    <p>TreasureBot supports UN Sustainable Development Goals 11 (Sustainable Cities), 12 (Responsible Consumption), and 13 (Climate Action) by automating sorting and promoting recycling to reduce landfill waste and improve urban cleanliness.</p>
+                </div>
+                
                 <!-- Technologies Used -->
                 <div class="project-card">
                     <div class="card-header">
-                        <i class="fas fa-code section-icon"></i>
+                        <div class="section-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
                         <h3>Technologies</h3>
                     </div>
                     <div class="tech-tags">
-                        <span class="tech-tag"><i class="fas fa-comment-alt"></i> NLP</span>
+                        <span class="tech-tag"><i class="fas fa-robot"></i> Robotics</span>
                         <span class="tech-tag"><i class="fas fa-camera"></i> Computer Vision</span>
                         <span class="tech-tag"><i class="fas fa-brain"></i> Machine Learning</span>
-                        <span class="tech-tag"><i class="fas fa-cubes"></i> Recommendation Systems</span>
-                        <span class="tech-tag"><i class="fas fa-comment-dots"></i> Sentiment Analysis</span>
+                        <span class="tech-tag"><i class="fas fa-network-wired"></i> IoT</span>
+                        <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Mobile App</span>
                     </div>
                 </div>
             </div>
@@ -257,7 +350,6 @@
             <div class="footer-info">
                 <h3>CLUQ AI SOLUTIONS</h3>
                 <p>Email: team@cluq.eu</p>
-                <p>VAT Number: Coming Soon</p>
             </div>
             <div class="footer-links">
                 <ul>

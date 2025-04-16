@@ -1,14 +1,15 @@
+/* ===== Base Reset ===== */
 html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        padding: 0.8rem 1rem;
-    }
+/* ===== Mobile First Approach ===== */
 
+/* Small devices and up (mobile-first) */
+@media (min-width: 320px) {
+    /* Mobile Navigation */
     .hamburger {
         display: block;
     }
@@ -42,6 +43,7 @@ html, body {
         width: 100%;
     }
 
+    /* Mobile Dropdown Menu */
     .dropdown-menu {
         position: static;
         opacity: 1;
@@ -81,156 +83,16 @@ html, body {
         transform: rotate(180deg);
     }
 
-    .hero {
-        padding: 50px 20px;
-        text-align: center;
-    }
-
-    .cta {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta button {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .portfolio-item {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 769px) {
-    .cta {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .portfolio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .portfolio-item {
-        flex-basis: 30%;
-        margin-bottom: 20px;
-    }
-}
-
-/* Responsive Styles */
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-    .cta-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 20px;
-    }
-
-    .cta-content h2 {
-        font-size: 1.6em;
-    }
-
-    .cta-button-container {
-        margin-left: 0;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-    
-    .footer-main {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-info, .footer-links {
-        text-align: center;
-        width: 100%;
-    }
-    
-    .footer-links ul {
-        align-items: center;
-    }
-
-    .featured-project-container {
-        max-width: 100%;
-    }
-    
-    .project-highlights {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-    }
-    
-    .featured-project-image {
-        height: 350px;
-    }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+    /* Mobile Layout */
     .hero {
         padding: 40px 15px;
+        text-align: center;
     }
     
     .hero-subtitle {
         font-size: 1em;
     }
-
-    .company-intro {
-        padding: 40px 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    main {
-        padding: 20px 15px;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .featured-project-image {
-        height: 300px;
-    }
     
-    .project-header h3 {
-        font-size: 1.7em;
-    }
-    
-    .project-highlights {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .project-location {
-        margin-bottom: 15px;
-    }
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    header {
-        padding: 10px 0;
-    }
-
     .hero h1 {
         font-size: 1.8em;
     }
@@ -239,14 +101,48 @@ html, body {
         font-size: 1em;
     }
 
+    .company-intro {
+        padding: 40px 15px;
+    }
+
+    /* Typography for mobile */
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
     .cta-content h2 {
         font-size: 1.4em;
     }
-    
-    .company-intro p {
-        font-size: 1em;
+
+    .cta-button-container {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
     }
 
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Featured Project */
     .featured-project-image {
         height: 250px;
     }
@@ -267,91 +163,175 @@ html, body {
         font-size: 0.75em;
         padding: 4px 8px;
     }
-}
-
-/* Responsive Styles for Featured Projects Slider */
-@media screen and (max-width: 992px) {
-    .featured-project-container {
-        flex-direction: column;
-    }
     
-    .featured-project-image, 
-    .featured-project-content {
-        flex: 0 0 100%;
-    }
-    
-    .featured-project-image {
-        height: 250px;
-    }
-    
-    .project-highlights {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .featured-projects {
-        padding: 3rem 1rem;
-    }
-    
-    .featured-projects-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .project-header h3 {
-        font-size: 1.5rem;
-    }
-    
-    .featured-project-content {
-        padding: 1.5rem;
-    }
-    
-    .slider-nav {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-@media screen and (max-width: 576px) {
+    /* Project Layout */
     .project-footer {
         flex-direction: column;
-        gap: 1rem;
         align-items: flex-start;
     }
     
-    .project-previews-container {
-        grid-template-columns: 1fr;
+    .project-location {
+        margin-bottom: 15px;
     }
     
-    .slider-indicators {
-        margin-top: 1rem;
+    /* Footer */
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
     }
     
-    .indicator {
-        width: 10px;
-        height: 10px;
+    .footer-info, .footer-links {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer-links ul {
+        align-items: center;
     }
 }
 
-/* Horizontal layout for nav menu on larger screens */
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    nav ul {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+    
+    /* Navigation */
+    .hamburger {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: static;
         flex-direction: row;
-        justify-content: center;
+        background: none;
+        width: auto;
+        height: auto;
+        padding: 0;
+        box-shadow: none;
+        right: 0;
     }
-
-    nav ul li {
+    
+    .nav-item {
         margin: 0 10px;
+        width: auto;
     }
-
+    
+    .nav-link {
+        display: inline-block;
+        padding: 0.5rem 0;
+        width: auto;
+    }
+    
+    /* Dropdown Menu */
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        background: #ffffff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+    
+    .nav-dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    .dropdown-item {
+        color: #333;
+        padding: 0.5rem 1rem;
+    }
+    
+    .dropdown-item:hover {
+        background: rgba(0, 123, 255, 0.1);
+        color: #007bff;
+    }
+    
+    /* Layout */
+    .hero {
+        padding: 50px 20px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1em;
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .company-intro {
+        padding: 60px 20px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        flex-direction: row;
+        text-align: left;
+        padding: 60px 0;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6em;
+    }
+    
+    .cta-button-container {
+        margin-left: 20px;
+        margin-top: 0;
+        text-align: right;
+    }
+    
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
     .footer-links ul {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    
     .footer-links li {
         margin: 0 10px 5px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Featured Project */
+    .featured-project-container {
+        max-width: 1200px;
+        flex-direction: row;
+    }
+    
+    .featured-project-image, 
+    .featured-project-content {
+        flex: 0 0 50%;
+    }
+    
+    .featured-project-image {
+        height: 350px;
+    }
+    
+    .project-highlights {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
     }
 }
