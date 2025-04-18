@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
     <title>CLUQ AI SOLUTIONS</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -10,6 +10,16 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            zoom: 0.9;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            body {
+                zoom: 0.9;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -53,24 +63,149 @@
     <section class="hero">
         <div id="particles-js" class="hero-background"></div>
         <div class="hero-content">
-            <h1 class="animate-fade">Welcome to CLUQ AI SOLUTIONS</h1>
-            <p class="animate-fade">Transforming the Future with AI</p>
-            <p class="hero-subtitle animate-fade">Your partner in innovative AI solutions for community building, sustainability, and public services.</p>
-            <a href="portfolio.html" class="cta-button animate-fade">View Our Work</a>
+            <h1 class="animate-fade">CLUQ AI SOLUTIONS</h1>
+            <p class="animate-fade">Empowering communities through AI innovation</p>
+            <p class="hero-subtitle animate-fade">We build cutting-edge AI solutions that drive sustainability, enhance public services, and foster community building.</p>
+            <a href="contact.html" class="cta-button animate-fade">Get Started</a>
         </div>
         <div class="scroll-down-indicator">
             <span class="scroll-arrow"></span>
         </div>
     </section>
-
+    
     <section class="company-intro">
-        <div class="container">
-            <h2>About CLUQ AI SOLUTIONS</h2>
-            <p>We are an innovative AI SaaS company based in Berlin! At CLUQ, we are dedicated to delivering cutting-edge AI solutions that empower community building, drive sustainability, and enhance public services.</p>
-            <p>With a portfolio of 6 advanced products, we're already making waves in the public, government, and corporate sectors.</p>
-        </div>
+        <h2>Crafting AI Solutions with Purpose</h2>
+        <p>At CLUQ AI SOLUTIONS, we specialize in developing innovative artificial intelligence systems that solve real-world problems. Our technologies empower communities, enhance sustainability initiatives, and transform how public services operate.</p>
+        <p>Based in Berlin, our team of AI specialists, engineers, and designers create custom solutions that make a meaningful difference in how organizations function and communities thrive.</p>
     </section>
-
+    
+    <main>
+        <section class="featured-projects reveal-on-scroll">
+            <h2 style="color: #007bff; font-size: 2.2rem; margin-bottom: 2rem; text-align: center;">Our Solutions</h2>
+            
+            <div class="portfolio-grid" style="max-width: 1200px; margin: 0 auto;">
+                <!-- TreasureBot -->
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
+                    <a href="projects/treasurebot.html" style="text-decoration: none; color: inherit; display: block;">
+                        <img src="assets/Treasurebot.png" alt="TreasureBot" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
+                        <div style="padding: 1.5rem;">
+                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">TreasureBot</h3>
+                            <p style="color: #666; margin-bottom: 1rem;">AI-powered autonomous waste management system</p>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                    <i class="fas fa-robot" style="margin-right: 0.3rem;"></i> Robotics
+                                </span>
+                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                    <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> AI
+                                </span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: #007bff; font-weight: 500;">View Details</span>
+                                <a href="https://treasurebot.eu/" target="_blank" onclick="event.stopPropagation();" style="width: 32px; height: 32px; background-color: rgba(0, 123, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #007bff;">
+                                    <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Fashion AI -->
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
+                    <a href="projects/fashionai.html" style="text-decoration: none; color: inherit; display: block;">
+                        <img src="assets/fassionai.png" alt="Fashion AI" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
+                        <div style="padding: 1.5rem;">
+                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">Fashion AI</h3>
+                            <p style="color: #666; margin-bottom: 1rem;">AI-powered personalized styling platform</p>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                    <i class="fas fa-tshirt" style="margin-right: 0.3rem;"></i> Fashion
+                                </span>
+                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                    <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> AI
+                                </span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: #007bff; font-weight: 500;">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Global Pickups -->
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
+                    <a href="projects/globalpickups.html" style="text-decoration: none; color: inherit; display: block;">
+                        <img src="assets/globalpickups.png" alt="Global Pickups" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
+                        <div style="padding: 1.5rem;">
+                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">Global Pickups</h3>
+                            <p style="color: #666; margin-bottom: 1rem;">Peer-to-peer delivery platform</p>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                    <i class="fas fa-truck" style="margin-right: 0.3rem;"></i> Delivery
+                                </span>
+                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                    <i class="fas fa-users" style="margin-right: 0.3rem;"></i> P2P
+                                </span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: #007bff; font-weight: 500;">View Details</span>
+                                <a href="https://globalpickups.com/" target="_blank" onclick="event.stopPropagation();" style="width: 32px; height: 32px; background-color: rgba(0, 123, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #007bff;">
+                                    <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px; text-align: center;">
+                <a href="portfolio.html" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 25px; font-size: 1rem; text-decoration: none; border-radius: 30px; transition: all 0.3s ease;">
+                    View All Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Our Approach Section with compact layout -->
+        <section class="compact-approach">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center; margin-left: auto; margin-right: auto;">Our Approach</h2>
+                
+                <div class="approach-grid">
+                    <div class="approach-item reveal-on-scroll" style="text-align: center;">
+                        <div class="approach-icon-wrapper" style="margin-left: auto; margin-right: auto;">
+                            <i class="fas fa-lightbulb approach-icon"></i>
+                        </div>
+                        <h3 class="approach-title">Understand</h3>
+                        <p class="approach-text">We begin by deeply understanding your challenges, goals, and processes.</p>
+                    </div>
+                    
+                    <div class="approach-item reveal-on-scroll" style="text-align: center;">
+                        <div class="approach-icon-wrapper" style="margin-left: auto; margin-right: auto;">
+                            <i class="fas fa-chart-line approach-icon"></i>
+                        </div>
+                        <h3 class="approach-title">Analyze</h3>
+                        <p class="approach-text">Our experts analyze data, identify patterns, and determine optimal AI approaches.</p>
+                    </div>
+                    
+                    <div class="approach-item reveal-on-scroll" style="text-align: center;">
+                        <div class="approach-icon-wrapper" style="margin-left: auto; margin-right: auto;">
+                            <i class="fas fa-cogs approach-icon"></i>
+                        </div>
+                        <h3 class="approach-title">Develop</h3>
+                        <p class="approach-text">We custom-build AI solutions tailored to your specific needs and objectives.</p>
+                    </div>
+                    
+                    <div class="approach-item reveal-on-scroll" style="text-align: center;">
+                        <div class="approach-icon-wrapper" style="margin-left: auto; margin-right: auto;">
+                            <i class="fas fa-rocket approach-icon"></i>
+                        </div>
+                        <h3 class="approach-title">Implement</h3>
+                        <p class="approach-text">Our team ensures smooth implementation with training and support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <section class="cta-section">
         <div class="container">
             <h2>Ready to transform your business with AI?</h2>
