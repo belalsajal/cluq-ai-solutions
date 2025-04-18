@@ -3,14 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deployment Test</title>
+    <!-- Aggressive cache-busting meta tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Deployment Test - <?php echo rand(1000, 9999); ?></title>
 </head>
 <body>
     <h1>Deployment Test</h1>
     <p>This file was successfully deployed at: <span id="timestamp"></span></p>
+    <p>Random cache-busting value: <span id="random"></span></p>
     
     <script>
         document.getElementById('timestamp').textContent = new Date().toString();
+        document.getElementById('random').textContent = Math.random().toString(36).substring(2, 15);
+        
+        // Force reload cached resources
+        function forceReload() {
+            const links = document.querySelectorAll('link[rel="stylesheet"]');
+            const scripts = document.querySelectorAll('script[src]');
+            
+            links.forEach(link => {
+                const href = link.href;
+                link.href = href + '?v=' + new Date().getTime();
+            });
+            
+            scripts.forEach(script => {
+                const src = script.src;
+                script.src = src + '?v=' + new Date().getTime();
+            });
+        }
+        
+        window.onload = forceReload;
     </script>
+    
+    <div>
+        <h2>Troubleshooting Steps</h2>
+        <ol>
+            <li>Try hard refreshing with Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)</li>
+            <li>Try opening in an incognito/private window</li>
+            <li>Check if your DNS has propagated (can take 24-48 hours for custom domains)</li>
+            <li>Your custom domain is <strong>cluq.eu</strong> - make sure it's correctly set up in DNS</li>
+        </ol>
+    </div>
 </body>
 </html>
