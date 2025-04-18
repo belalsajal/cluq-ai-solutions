@@ -2,22 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
+    <!-- Cache-busting meta tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>FAQ - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/responsive.css?v=1.1">
     <!-- Particles.js library for the interactive background -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            zoom: 0.9;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            body {
+                zoom: 0.9;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+        <div class="navbar">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-name">CLUQ AI</span>
+            </a>
+            
+            <button class="hamburger" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
+                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
+                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
+                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
+                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
+                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link active">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
-        </nav>
+        </div>
     </header>
     
     <section class="page-hero">
