@@ -1,129 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de"> <!-- Changed to 'de' as content is German -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-    <!-- Cache-busting meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>AGB - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <title>AGB - CLUQ AI SOLUTIONS</title> <!-- AGB is fine for German page title -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            zoom: 0.9;
-        }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
+
+    <header class="site-header">
+        <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
-                <span class="brand-name">CLUQ AI</span>
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
             </a>
-            
-            <button class="hamburger" id="navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item nav-dropdown">
-                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
-                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
-                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
-                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
-                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
-                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <!-- Add FAQ to nav if desired, AGB/Impressum usually in footer -->
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">Allgemeine Geschäftsbedingungen</h1>
-            <p class="animate-fade">Vertragliche Rahmenbedingungen für unsere Zusammenarbeit</p>
-        </div>
-    </section>
-    
-    <main>
-        <section class="reveal-on-scroll">
-            <h2>1. Geltungsbereich</h2>
-            <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge, die zwischen CLUQ AI SOLUTIONS und den Kunden abgeschlossen werden.</p>
+
+    <main class="page-main-content">
+        <section class="page-hero-section section-padding" id="agb-hero">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container text-center">
+                <h1 class="hero-headline">Allgemeine Geschäftsbedingungen</h1>
+                <p class="hero-subheadline">Vertragliche Rahmenbedingungen für unsere Zusammenarbeit.</p>
+            </div>
         </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>2. Vertragsabschluss</h2>
-            <p>Der Vertrag kommt zustande, wenn der Kunde das Angebot von CLUQ AI SOLUTIONS annimmt.</p>
-        </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>3. Preise und Zahlungsbedingungen</h2>
-            <p>Die Preise sind in Euro angegeben und verstehen sich zuzüglich der gesetzlichen Mehrwertsteuer.</p>
-        </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>4. Widerrufsrecht</h2>
-            <p>Der Kunde hat das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
-        </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>5. Haftung</h2>
-            <p>Die Haftung von CLUQ AI SOLUTIONS ist auf Vorsatz und grobe Fahrlässigkeit beschränkt.</p>
-        </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>6. Schlussbestimmungen</h2>
-            <p>Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist der Sitz von CLUQ AI SOLUTIONS.</p>
+
+        <section class="legal-content-section section-padding" id="agb-content">
+            <div class="container">
+                <div class="legal-text-wrapper">
+                    <section class="legal-clause reveal-on-scroll">
+                        <h2>1. Geltungsbereich</h2>
+                        <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge, die zwischen CLUQ AI SOLUTIONS GmbH (nachfolgend "CLUQ AI" oder "wir") und ihren Kunden (nachfolgend "Kunde" oder "Sie") abgeschlossen werden. Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, CLUQ AI stimmt ihrer Geltung ausdrücklich schriftlich zu.</p>
+                    </section>
+                    
+                    <section class="legal-clause reveal-on-scroll">
+                        <h2>2. Vertragsabschluss</h2>
+                        <p>Die Präsentation unserer Dienstleistungen auf der Webseite stellt kein rechtlich bindendes Vertragsangebot dar, sondern eine Aufforderung zur Abgabe eines Angebots durch den Kunden. Der Vertrag kommt durch die Annahme des Angebots des Kunden durch CLUQ AI zustande. Dies kann durch eine ausdrückliche Annahmeerklärung oder durch den Beginn der Leistungserbringung erfolgen.</p>
+                        <p>[Platzhalter: Ggf. spezifische Details zum Vertragsschluss für verschiedene Dienstleistungen/Produkte einfügen.]</p>
+                    </section>
+                    
+                    <section class="legal-clause reveal-on-scroll">
+                        <h2>3. Preise und Zahlungsbedingungen</h2>
+                        <p>Die vereinbarten Preise für unsere Dienstleistungen sind in Euro angegeben und verstehen sich zuzüglich der jeweils geltenden gesetzlichen Mehrwertsteuer. Zahlungsmodalitäten, Fälligkeiten und akzeptierte Zahlungsmethoden werden im jeweiligen Angebot oder Vertrag spezifiziert.</p>
+                        <p>[Platzhalter: Details zu Zahlungsverzug, Skonto, etc. falls anwendbar.]</p>
+                    </section>
+                    
+                    <section class="legal-clause reveal-on-scroll">
+                        <h2>4. Widerrufsrecht für Verbraucher</h2>
+                        <p>Sofern der Kunde Verbraucher im Sinne des § 13 BGB ist, steht ihm ein gesetzliches Widerrufsrecht zu. Details hierzu sind der separaten Widerrufsbelehrung zu entnehmen.</p>
+                        <p>[Platzhalter: Verlinkung zur Widerrufsbelehrung oder direkte Integration der Belehrung. Sicherstellen, dass dies für die angebotenen Dienstleistungen anwendbar ist.]</p>
+                    </section>
+                    
+                    <section class="legal-clause reveal-on-scroll">
+                        <h2>5. Haftung</h2>
+                        <p>CLUQ AI haftet unbeschränkt für Vorsatz und grobe Fahrlässigkeit. Für leichte Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten), deren Verletzung die Erreichung des Vertragszwecks gefährdet oder deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung der Kunde regelmäßig vertrauen darf. In diesem Fall ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt. Die vorstehenden Haftungsbeschränkungen gelten nicht bei Verletzung von Leben, Körper und Gesundheit, für einen Mangel nach Übernahme einer Garantie für die Beschaffenheit des Produktes und bei arglistig verschwiegenen Mängeln. Die Haftung nach dem Produkthaftungsgesetz bleibt unberührt.</p>
+                        <p>[Platzhalter: Ggf. spezifische Haftungsregelungen für bestimmte Dienstleistungen/Software.]</p>
+                    </section>
+                    
+                    <section class="legal-clause reveal-on-scroll">
+                        <h2>6. Datenschutz</h2>
+                        <p>Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Informationen zur Erhebung und Verwendung personenbezogener Daten finden Sie in unserer Datenschutzerklärung.</p>
+                        <p>[Platzhalter: Verlinkung zur Datenschutzerklärung.]</p>
+                    </section>
+
+                    <section class="legal-clause reveal-on-scroll">
+                        <h2>7. Schlussbestimmungen</h2>
+                        <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Sofern der Kunde Kaufmann, eine juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches Sondervermögen ist, ist Gerichtsstand für alle Streitigkeiten aus Vertragsverhältnissen zwischen dem Kunden und CLUQ AI der Sitz von CLUQ AI (Berlin).</p>
+                        <p>Sollten einzelne Bestimmungen dieser Allgemeinen Geschäftsbedingungen unwirksam sein oder werden, so wird dadurch die Wirksamkeit der übrigen Bestimmungen nicht berührt.</p>
+                        <p>Stand: [Aktuelles Datum einfügen]</p>
+                    </section>
+                </div> <!-- /.legal-text-wrapper -->
+            </div> <!-- /.container -->
         </section>
     </main>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li> 
+                        <li><a href="agb.html">Terms & Conditions</a></li>
+                        <li><a href="impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Basic script for current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic hamburger menu toggle 
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+                 const icon = navbarToggle.querySelector('i');
+                if (icon) {
+                    if (isExpanded) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        }
+        // Scroll reveal (can be moved to main.js if it gets more complex)
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        const revealObserverOptions = { threshold: 0.1 };
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealObserverOptions);
+        revealElements.forEach(element => {
+            revealObserver.observe(element);
+        });
+    </script>
 </body>
 </html>

@@ -2,254 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-    <!-- Cache-busting meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Portfolio - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <title>Our AI Initiatives: Concepts in Development - CLUQ AI SOLUTIONS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            zoom: 0.9;
-        }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
+
+    <header class="site-header">
+        <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
-                <span class="brand-name">CLUQ AI</span>
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
             </a>
-            
-            <button class="hamburger" id="navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item nav-dropdown">
-                    <a href="portfolio.html" class="nav-link active">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
-                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
-                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
-                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
-                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
-                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Solutions</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">Our Portfolio</h1>
-            <p class="animate-fade">Explore our innovative AI solutions for community building, sustainability, and public services.</p>
-        </div>
-    </section>
-    
+
     <main>
-        <section class="portfolio">
-            <h1>Our Projects</h1>
-            <p>Discover our innovative AI solutions that are transforming industries</p>
-            
-            <div class="portfolio-grid reveal-on-scroll">
-                <!-- TreasureBot -->
-                <a href="projects/treasurebot.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-item">
-                        <img src="assets/Treasurebot.png" alt="TreasureBot">
-                        <div class="external-link-icon" onclick="window.open('https://treasurebot.eu/', '_blank')">
-                            <i class="fas fa-external-link-alt"></i>
+        <!-- Introduction Section -->
+        <section class="page-hero-section portfolio-hero section-padding" id="portfolio-introduction">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container text-center">
+                <h1 class="hero-headline">Innovating for a Smarter Future: Our Project Concepts</h1>
+                <p class="hero-subheadline page-intro-text">
+                    The projects showcased below are currently in various stages of development, from concept to initial prototyping. They represent our dedication to leveraging AI for tangible, positive change in everyday life and public services. At CLUQ AI SOLUTIONS, we are committed to exploring AI's potential to enhance community well-being, promote sustainability, and drive digitalization. These initiatives reflect our passion for applying intelligent solutions to real-world challenges.
+                </p>
+            </div>
+        </section>
+
+        <!-- Project Listing Section -->
+        <section class="project-listing-section section-padding bg-light-gray" id="project-listing">
+            <div class="container">
+                <div class="project-grid">
+                    <!-- Project Card 1: Anmeldung Digital -->
+                    <article class="project-card">
+                        <div class="project-icon-container">
+                            <i class="fas fa-file-alt"></i>
                         </div>
-                        <div class="portfolio-item-content">
-                            <h3>TreasureBot</h3>
-                            <p>AI-powered autonomous waste management system</p>
-                            <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-robot"></i> Robotics</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-camera"></i> Computer Vision</span>
-                            </div>
-                            <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
-                            </div>
+                        <h3 class="project-name">Anmeldung Digital</h3>
+                        <p class="project-tagline">Simplifying Bureaucracy with Intelligent Automation.</p>
+                        <p class="project-description">Anmeldung Digital aims to revolutionize the German residency registration process. By applying AI to automate form-filling and document verification, this solution seeks to significantly reduce complexity and waiting times, making the process smoother for newcomers and more efficient for local governments. Its potential lies in enhancing digitalization within public services.</p>
+                        <span class="dev-stage-tag">Status: In Development</span>
+                        <a href="projects/anmeldungdigital.html" class="btn btn-secondary project-learn-more">Learn More</a>
+                    </article>
+
+                    <!-- Project Card 2: City Pickups -->
+                    <article class="project-card">
+                        <div class="project-icon-container">
+                            <i class="fas fa-shipping-fast"></i>
                         </div>
-                    </div>
-                </a>
-                
-                <!-- Fashion AI -->
-                <a href="projects/fashionai.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-item">
-                        <img src="assets/fassionai.png" alt="Fashion AI">
-                        <div class="portfolio-item-content">
-                            <h3>Fashion AI</h3>
-                            <p>AI-powered personalized styling platform</p>
-                            <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-tshirt"></i> Fashion</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-mobile-alt"></i> Mobile</span>
-                            </div>
-                            <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
-                            </div>
+                        <h3 class="project-name">City Pickups</h3>
+                        <p class="project-tagline">Community-Powered Deliveries, Connecting Neighbors.</p>
+                        <p class="project-description">City Pickups is envisioned as a peer-to-peer delivery platform connecting local couriers with users needing items transported within the city. It aims to offer a faster, more affordable, and community-driven alternative to traditional delivery services, potentially reducing wait times and supporting local economies by enabling individuals to earn as couriers.</p>
+                        <span class="dev-stage-tag">Status: Concept Phase</span>
+                        <a href="projects/citypickups.html" class="btn btn-secondary project-learn-more">Learn More</a>
+                    </article>
+
+                    <!-- Project Card 3: Fashion AI -->
+                    <article class="project-card">
+                        <div class="project-icon-container">
+                            <i class="fas fa-tshirt"></i>
                         </div>
-                    </div>
-                </a>
-                
-                <!-- Maximize CV -->
-                <a href="projects/maximizecv.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-item">
-                        <img src="assets/Tailoredapply.png" alt="Maximize CV">
-                        <div class="portfolio-item-content">
-                            <h3>Maximize CV</h3>
-                            <p>AI-powered resume optimization tool</p>
-                            <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-file-alt"></i> CV</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-chart-line"></i> Analytics</span>
-                            </div>
-                            <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
-                            </div>
+                        <h3 class="project-name">Fashion AI</h3>
+                        <p class="project-tagline">Personalized Style, Redefined by AI.</p>
+                        <p class="project-description">Fashion AI is conceptualized as an intelligent styling platform. It aims to use AI to provide personalized fashion recommendations, virtual try-on experiences, and sustainable shopping options, tailored to individual preferences and body types, potentially reducing returns and promoting conscious consumption.</p>
+                        <span class="dev-stage-tag">Status: Concept Phase</span>
+                        <a href="projects/fashionai.html" class="btn btn-secondary project-learn-more">Learn More</a>
+                    </article>
+
+                    <!-- Project Card 4: Global Pickups -->
+                    <article class="project-card">
+                        <div class="project-icon-container">
+                            <i class="fas fa-globe-americas"></i>
                         </div>
-                    </div>
-                </a>
-                
-                <!-- Global Pickups -->
-                <a href="projects/globalpickups.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-item">
-                        <img src="assets/globalpickups.png" alt="Global Pickups">
-                        <div class="external-link-icon" onclick="window.open('https://globalpickups.com/', '_blank')">
-                            <i class="fas fa-external-link-alt"></i>
+                        <h3 class="project-name">Global Pickups</h3>
+                        <p class="project-tagline">Connecting Travelers, Delivering Goods, Sustainably.</p>
+                        <p class="project-description">Global Pickups proposes a peer-to-peer delivery network where international travelers can utilize their unused luggage space to transport items for others. This solution aims to offer a more affordable and potentially faster alternative to traditional shipping, with a focus on community and reducing the carbon footprint of deliveries.</p>
+                        <span class="dev-stage-tag">Status: In Development</span>
+                        <a href="projects/globalpickups.html" class="btn btn-secondary project-learn-more">Learn More</a>
+                    </article>
+
+                    <!-- Project Card 5: Maximize CV -->
+                    <article class="project-card">
+                        <div class="project-icon-container">
+                            <i class="fas fa-file-signature"></i>
                         </div>
-                        <div class="portfolio-item-content">
-                            <h3>Global Pickups</h3>
-                            <p>Peer-to-peer delivery platform</p>
-                            <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-truck"></i> Delivery</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-users"></i> P2P</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-map-marker-alt"></i> Location</span>
-                            </div>
-                            <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
-                            </div>
+                        <h3 class="project-name">Maximize CV</h3>
+                        <p class="project-tagline">AI-Powered Resume Optimization for Career Success.</p>
+                        <p class="project-description">Maximize CV is designed as an intelligent tool to help job seekers optimize their resumes for Applicant Tracking Systems (ATS) and specific job descriptions. By leveraging AI to analyze job requirements and suggest keywords and improvements, it aims to increase the chances of candidates landing interviews.</p>
+                        <span class="dev-stage-tag">Status: In Development</span>
+                        <a href="projects/maximizecv.html" class="btn btn-secondary project-learn-more">Learn More</a>
+                    </article>
+
+                    <!-- Project Card 6: Personal Data Platform -->
+                    <article class="project-card">
+                        <div class="project-icon-container">
+                            <i class="fas fa-user-shield"></i>
                         </div>
-                    </div>
-                </a>
-                
-                <!-- Personal Data Platform -->
-                <a href="projects/personaldataplatform.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-item">
-                        <img src="assets/personaldata.png" alt="Personal Data Platform">
-                        <div class="portfolio-item-content">
-                            <h3>Personal Data Platform</h3>
-                            <p>Secure AI-driven personal data management solution</p>
-                            <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-shield-alt"></i> Security</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-database"></i> Data</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-lock"></i> Privacy</span>
-                            </div>
-                            <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
-                            </div>
+                        <h3 class="project-name">Personal Data Platform</h3>
+                        <p class="project-tagline">Empowering You with Control Over Your Digital Identity.</p>
+                        <p class="project-description">This project explores a secure, AI-driven platform for personal data management. The goal is to provide individuals with enhanced control over their data, how it's shared, and its potential for monetization, while leveraging AI for privacy protection and insights. It aims to address the growing concerns of data privacy in the digital age.</p>
+                        <span class="dev-stage-tag">Status: Concept Phase</span>
+                        <a href="projects/personaldataplatform.html" class="btn btn-secondary project-learn-more">Learn More</a>
+                    </article>
+
+                    <!-- Project Card 7: TreasureBot -->
+                    <article class="project-card">
+                        <div class="project-icon-container">
+                            <i class="fas fa-robot"></i>
                         </div>
-                    </div>
-                </a>
-                
-                <!-- Anmeldung Digital -->
-                <a href="projects/anmeldungdigital.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-item">
-                        <img src="assets/Anmeldungassist.png" alt="Anmeldung Digital">
-                        <div class="portfolio-item-content">
-                            <h3>Anmeldung Digital</h3>
-                            <p>AI-powered digital registration system</p>
-                            <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-file-invoice"></i> OCR</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-language"></i> NLP</span>
-                            </div>
-                            <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- City Pickups -->
-                <a href="projects/citypickups.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-item">
-                        <img src="assets/citypickups.png" alt="City Pickups">
-                        <div class="portfolio-item-content">
-                            <h3>City Pickups</h3>
-                            <p>Community-driven peer-to-peer delivery platform</p>
-                            <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-truck"></i> Delivery</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-users"></i> P2P</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-map-marker-alt"></i> Community</span>
-                            </div>
-                            <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                        <h3 class="project-name">TreasureBot</h3>
+                        <p class="project-tagline">Autonomous Waste Sorting for Cleaner Communities.</p>
+                        <p class="project-description">TreasureBot is an AI-powered autonomous waste sorting and collection unit. It's being developed to improve recycling rates and waste management efficiency in urban public spaces by using computer vision for smart detection and robotics for precision sorting, contributing to cleaner cities and sustainability efforts.</p>
+                        <span class="dev-stage-tag">Status: In Development</span>
+                        <a href="projects/treasurebot.html" class="btn btn-secondary project-learn-more">Learn More</a>
+                    </article>
+                </div> <!-- /.project-grid -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- Concluding Section -->
+        <section class="portfolio-conclusion-section section-padding" id="portfolio-conclusion">
+            <div class="container text-center">
+                <h2 class="section-title">Our Commitment to Innovation</h2>
+                <p class="conclusion-text">CLUQ AI SOLUTIONS is dedicated to the ongoing development of these and future AI initiatives. We believe in the power of technology to create meaningful change and are excited to refine these concepts into impactful solutions. We welcome inquiries for collaboration and partnerships from those who share our vision for a smarter, more sustainable future.</p>
+                <a href="contact.html" class="btn btn-primary">Collaborate With Us</a>
             </div>
         </section>
     </main>
-    
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to take your organization to the next level?</h2>
-            <p>Contact us today to discuss how we can help you leverage AI technology.</p>
-        </div>
-        <div class="cta-button-container">
-            <a href="contact.html" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li> 
+                        <li><a href="agb.html">Terms & Conditions</a></li>
+                        <li><a href="impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+            });
+        }
+    </script>
 </body>
 </html>

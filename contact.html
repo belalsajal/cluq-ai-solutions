@@ -2,218 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-lets    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-    <!-- Cache-busting meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Contact Us - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            zoom: 0.9;
-        }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
-            }
-        }
-        
-        .contact-form {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-            transition: border-color 0.3s;
-        }
-        
-        .form-control:focus {
-            border-color: #007bff;
-            outline: none;
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-        }
-        
-        .contact-info {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        
-        .contact-info h2 {
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-        
-        .contact-method {
-            display: inline-flex;
-            align-items: center;
-            margin: 0 15px;
-            color: #333;
-        }
-        
-        .contact-method i {
-            font-size: 20px;
-            margin-right: 8px;
-            color: #007bff;
-        }
-        
-        .submit-btn {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        
-        .submit-btn:hover {
-            background: #0056b3;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
+
+    <header class="site-header">
+        <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
-                <span class="brand-name">CLUQ AI</span>
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
             </a>
-            
-            <button class="hamburger" id="navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item nav-dropdown">
-                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
-                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
-                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
-                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
-                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
-                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link active">Contact</a>
-                </li>
-            </ul>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">Contact Us</h1>
-            <p class="animate-fade">We'd love to hear from you</p>
-        </div>
-    </section>
+    <main class="page-main-content">
+        <section class="page-hero-section section-padding" id="contact-hero">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container text-center">
+                <h1 class="hero-headline">Get in Touch</h1>
+                <p class="hero-subheadline">We're here to answer your questions and explore how our AI solutions can help you.</p>
+            </div>
+        </section>
 
-    <main>
+        <section class="contact-content-section section-padding" id="contact-form-area">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info-column reveal-on-scroll">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 1em;">Contact Information</h2>
+                        <p>Have a question or a project in mind? Reach out to us. We're eager to discuss your needs and how CLUQ AI SOLUTIONS can contribute to your success.</p>
+                        <ul class="contact-details-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Uhlandstr. 22, 13156 Berlin, Germany (Please schedule appointments in advance)</li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:info@cluqai.com" class="text-link">info@cluqai.com</a></li>
+                            <li><i class="fas fa-phone"></i> [Placeholder: +49 (0)30 123456789]</li>
+                        </ul>
+                        <p>For specific inquiries, please use the contact form, and we'll get back to you as soon as possible.</p>
+                    </div>
+
+                    <div class="contact-form-column reveal-on-scroll">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 1em;">Send Us a Message</h2>
+                        <form id="contactForm" class="contact-form-element" action="#" method="POST"> <!-- Replace # with your form processing endpoint -->
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required placeholder="e.g., Jane Doe">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="e.g., jane.doe@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company (Optional)</label>
+                                <input type="text" id="company" name="company" class="form-control" placeholder="e.g., Example Corp">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required placeholder="e.g., Inquiry about AI Solutions">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="6" required placeholder="Your message..."></textarea>
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </div> 
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding">
         <div class="container">
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <span>team@cluq.eu</span>
-                    </div>
-                    <div class="contact-method">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Berlin, Germany</span>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li> 
+                        <li><a href="agb.html">Terms & Conditions</a></li>
+                        <li><a href="impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="contact-form">
-                <form id="contactForm" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="company">Company (Optional)</label>
-                        <input type="text" id="company" name="company" class="form-control">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" class="form-control" required></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </div>
-                </form>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Basic script for current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic hamburger menu toggle 
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+                 const icon = navbarToggle.querySelector('i');
+                if (icon) {
+                    if (isExpanded) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        }
+        // Scroll reveal (can be moved to main.js if it gets more complex)
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        const revealObserverOptions = { threshold: 0.1 };
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealObserverOptions);
+        revealElements.forEach(element => {
+            revealObserver.observe(element);
+        });
+
+        // Basic form submission handling (can be expanded)
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent actual submission for this example
+                // In a real scenario, you'd collect data and send it via AJAX or let the form submit
+                alert('Thank you for your message! (This is a demo - no data was sent)');
+                this.reset(); // Reset form fields
+            });
+        }
+    </script>
 </body>
 </html>

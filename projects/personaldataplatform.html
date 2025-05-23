@@ -3,322 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Data Platform - CLUQ AI SOLUTIONS</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Project: Personal Data Platform - CLUQ AI SOLUTIONS</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .project-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        .section-icon {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #007bff;
-            color: white;
-            margin-right: 12px;
-            font-size: 16px;
-        }
-        
-        .card-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 16px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            padding-bottom: 12px;
-        }
-        
-        .card-header h3 {
-            margin: 0;
-            font-size: 1.2em;
-            color: #333333;
-            font-weight: 600;
-        }
-        
-        .project-content {
-            padding: 0;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .project-content p {
-            margin: 0.5em 0;
-            font-size: 0.95em;
-            line-height: 1.5;
-            color: #444444;
-        }
-        
-        .key-metrics {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        
-        .key-metric {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 8px;
-            font-size: 0.9em;
-            color: #444444;
-        }
-        
-        .key-metric i {
-            width: 28px;
-            height: 28px;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            background-color: rgba(0, 123, 255, 0.1);
-            color: #007bff;
-            margin-right: 10px;
-            font-size: 14px;
-        }
-        
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-        
-        .tech-tag {
-            background: rgba(0, 123, 255, 0.08);
-            border: 1px solid rgba(0, 123, 255, 0.3);
-            border-radius: 15px;
-            padding: 4px 10px;
-            font-size: 0.8em;
-            color: #007bff;
-        }
-        
-        .project-overview {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .two-column-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .project-header {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .project-header img {
-            max-height: 300px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Make project detail section more compact */
-        .project-detail {
-            padding-top: 0;
-        }
-        
-        .page-hero {
-            padding-bottom: 16px;
-        }
-        
-        @media (max-width: 768px) {
-            .project-overview,
-            .key-metrics,
-            .two-column-section {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">Personal Data Platform</h1>
-            <p class="animate-fade">Secure AI-driven personal data management solution</p>
+
+    <header class="site-header">
+        <div class="container navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
+            </a>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="../portfolio.html" class="nav-link active">Solutions</a></li>
+                    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    
-    <main>
-        <section class="project-detail">
-            <div class="project-header">
-                <img src="../assets/personaldata.png" alt="Personal Data Platform" class="project-image">
+    </header>
+
+    <main class="project-page-main">
+        <!-- Hero Section -->
+        <section class="page-hero-section project-hero section-padding" id="project-hero-personaldataplatform">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container text-center">
+                <h1 class="hero-headline project-name-headline">Personal Data Platform</h1>
+                <p class="hero-subheadline project-tagline">Your Data, Your Rules: Securely Manage and Leverage Your Personal Information with AI.</p>
             </div>
-            
-            <div class="project-content">
-                <!-- About Card -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <div class="section-icon">
-                            <i class="fas fa-info-circle"></i>
-                        </div>
-                        <h3>Overview</h3>
-                    </div>
-                    <p>A revolutionary system that puts individuals in control of their personal data while leveraging AI to maximize its utility and security. Our platform creates a secure, user-controlled ecosystem for storing, managing, and selectively sharing personal information.</p>
+        </section>
+
+        <!-- Overview/About the Project Section -->
+        <section class="project-overview-section section-padding" id="overview">
+            <div class="container">
+                <h2 class="section-title">The Vision Behind the Personal Data Platform</h2>
+                <p>CLUQ AI SOLUTIONS is conceptualizing a Personal Data Platform to address the growing need for individuals to control and manage their own digital footprint. In an era of vast data collection, this platform aims to provide users with a secure, transparent, and AI-driven ecosystem for storing, managing, and selectively sharing their personal information. The core idea is to shift the power dynamic, allowing users to become active participants in how their data is utilized, rather than passive subjects.</p>
+            </div>
+        </section>
+
+        <!-- The Challenge Section -->
+        <section class="project-challenge-section section-padding bg-light-gray" id="challenge">
+            <div class="container">
+                <h2 class="section-title">The Modern Data Dilemma</h2>
+                <ul class="challenge-list">
+                    <li><strong>Lack of Control:</strong> Users often have limited visibility or control over who collects their data and how it is used, sold, or shared.</li>
+                    <li><strong>Privacy Risks:</strong> Centralized data storage by numerous companies increases the risk of data breaches and unauthorized access.</li>
+                    <li><strong>Complex Privacy Policies:</strong> Understanding terms and conditions or privacy settings for various online services is often time-consuming and confusing.</li>
+                    <li><strong>Data Silos:</strong> Personal information is scattered across multiple platforms, making it difficult to manage holistically.</li>
+                    <li><strong>Untapped Value:</strong> Individuals rarely benefit directly from the economic value generated by their personal data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Our Proposed Solution Section -->
+        <section class="project-solution-section section-padding" id="solution">
+            <div class="container">
+                <h2 class="section-title">An AI-Powered Hub for Personal Data Empowerment</h2>
+                <p>The Personal Data Platform by CLUQ AI SOLUTIONS is envisioned to feature:</p>
+                <ul class="solution-list">
+                    <li><strong>Secure Decentralized Storage (Conceptual):</strong> Exploring models where users can store their encrypted data in a decentralized manner or a highly secure personal data vault, giving them primary control over access keys.</li>
+                    <li><strong>Granular Permission Controls:</strong> Users can define specific permissions for different services or third parties, dictating what data can be accessed, for what purpose, and for how long.</li>
+                    <li><strong>AI-Powered Privacy Assistance:</strong> AI algorithms could help users understand the privacy implications of sharing certain data points, assess the trustworthiness of data requesters, and detect potential misuse.</li>
+                    <li><strong>Automated Rights Management (e.g., GDPR DSAR):</strong> Tools to help users easily exercise their data rights, such as data access, rectification, or deletion requests.</li>
+                    <li><strong>Data Monetization Options (Optional & User-Controlled):</strong> If desired, users could opt-in to securely and anonymously share specific data with trusted entities in exchange for rewards or benefits, under transparent terms.</li>
+                    <li><strong>Personalized Insights:</strong> AI could help users derive personal insights from their own data (e.g., spending habits, health trends) without that data leaving their secure environment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Potential Impact Section -->
+        <section class="project-impact-section section-padding bg-light-gray" id="impact">
+            <div class="container">
+                <h2 class="section-title">Envisioned Benefits of the Personal Data Platform</h2>
+                <ul class="impact-list">
+                    <li><strong>Enhance Individual Privacy:</strong> Give users meaningful control and tools to protect their personal information.</li>
+                    <li><strong>Increase Transparency:</strong> Make data sharing practices clearer and more understandable.</li>
+                    <li><strong>Simplify Data Management:</strong> Provide a centralized dashboard for managing data permissions across various services.</li>
+                    <li><strong>Empower Users:</strong> Shift from a model of passive data provision to active data ownership and control.</li>
+                    <li><strong>Foster Trust in Digital Services:</strong> By giving users more agency, it could lead to greater trust in how companies handle data.</li>
+                    <li><strong>Unlock Personal Value:</strong> Potentially allow users to benefit from the value of their data, should they choose to monetize it ethically.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="project-features-section section-padding" id="features">
+            <div class="container">
+                <h2 class="section-title">Core Functionalities (Conceptual)</h2>
+                <div class="features-grid">
+                    <div class="feature-item"><i class="fas fa-shield-alt"></i> Secure personal data vault/storage.</div>
+                    <div class="feature-item"><i class="fas fa-sliders-h"></i> Fine-grained, user-defined access controls.</div>
+                    <div class="feature-item"><i class="fas fa-user-secret"></i> AI-driven privacy risk assessment and alerts.</div>
+                    <div class="feature-item"><i class="fas fa-chart-pie"></i> Dashboard for tracking data sharing and usage.</div>
+                    <div class="feature-item"><i class="fas fa-gavel"></i> Tools for managing data subject rights (DSAR).</div>
+                    <div class="feature-item"><i class="fas fa-share-alt"></i> Secure data sharing protocols.</div>
+                    <div class="feature-item"><i class="fas fa-coins"></i> Opt-in data monetization marketplace.</div>
+                    <div class="feature-item"><i class="fas fa-brain"></i> Personal data analytics (privacy-preserving).</div>
+                    <div class="feature-item"><i class="fas fa-id-card"></i> Identity management features.</div>
                 </div>
-                
-                <!-- Project Overview Section with Challenge and Solution -->
-                <div class="project-overview">
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-exclamation-triangle"></i>
-                            </div>
-                            <h3>The Challenge</h3>
-                        </div>
-                        <p>Today's digital landscape presents a paradox: users need to share personal data to access services, yet face increasing privacy risks and lack control over how their information is used.</p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h3>Our Solution</h3>
-                        </div>
-                        <p>A user-centric data ecosystem where information is stored securely, with AI algorithms helping users understand privacy implications and control exactly what is shared with which services.</p>
-                    </div>
-                </div>
-                
-                <!-- Two Column Layout for Features and Impact -->
-                <div class="two-column-section">
-                    <!-- Key Features -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h3>Key Features</h3>
-                        </div>
-                        <div class="key-metrics">
-                            <div class="key-metric">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Decentralized storage with user-owned keys</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-sliders-h"></i>
-                                <span>Granular permission controls</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-brain"></i>
-                                <span>AI-powered risk assessment</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Automated rights management</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-coins"></i>
-                                <span>Data monetization options</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Impact Section -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Impact</h3>
-                        </div>
-                        <div class="key-metrics">
-                            <div class="key-metric">
-                                <i class="fas fa-tachometer-alt"></i>
-                                <span><strong>95%</strong> faster form completion</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-lock"></i>
-                                <span><strong>67%</strong> fewer data breaches</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-hand-holding-usd"></i>
-                                <span><strong>85%</strong> monetization retention</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-file-contract"></i>
-                                <span>Enhanced compliance</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Technologies Used -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <div class="section-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Technologies</h3>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag"><i class="fas fa-link"></i> Blockchain</span>
-                        <span class="tech-tag"><i class="fas fa-user-secret"></i> Zero-Knowledge Proofs</span>
-                        <span class="tech-tag"><i class="fas fa-network-wired"></i> Federated Learning</span>
-                        <span class="tech-tag"><i class="fas fa-lock"></i> Homomorphic Encryption</span>
-                        <span class="tech-tag"><i class="fas fa-file-contract"></i> Smart Contracts</span>
-                    </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="project-tech-section section-padding bg-light-gray" id="technologies">
+            <div class="container">
+                <h2 class="section-title">Core Technologies (Conceptual)</h2>
+                <ul class="tech-list">
+                    <li><strong>Cryptography:</strong> End-to-end encryption, homomorphic encryption, zero-knowledge proofs.</li>
+                    <li><strong>Decentralized Technologies (Exploratory):</strong> Blockchain/DLT for consent logging, decentralized storage.</li>
+                    <li><strong>AI/Machine Learning:</strong> Privacy assistance, anomaly detection, personalized insights, federated learning.</li>
+                    <li><strong>Secure Backend and APIs:</strong> For managing permissions and interactions.</li>
+                    <li><strong>User-Friendly Interface:</strong> Web and mobile interfaces.</li>
+                    <li><strong>Privacy-Enhancing Technologies (PETs).</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Current Development Stage Section -->
+        <section class="project-status-section section-padding" id="status">
+            <div class="container">
+                <h2 class="section-title">Project Status</h2>
+                <p>Status: Concept Phase. CLUQ AI SOLUTIONS is in the early stages of research and conceptualization for the Personal Data Platform. This includes exploring advanced security and privacy technologies, defining the core architecture for user-controlled data storage, and designing AI algorithms for privacy assistance. The primary focus is on creating a trustworthy and empowering user experience.</p>
+                 <div class="text-center" style="margin-top: 30px;">
+                    <a href="../portfolio.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Solutions</a>
                 </div>
             </div>
         </section>
     </main>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../portfolio.html">Solutions</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../faq.html">FAQ</a></li> 
+                        <li><a href="../agb.html">Terms & Conditions</a></li>
+                        <li><a href="../impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../agb.html">AGB</a></li>
-                    <li><a href="../impressum.html">Impressum</a></li>
-                    <li><a href="../faq.html">FAQ</a></li>
-                </ul>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+            });
+        }
+    </script>
 </body>
 </html>

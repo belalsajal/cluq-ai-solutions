@@ -3,322 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anmeldung Digital - CLUQ AI SOLUTIONS</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Project: Anmeldung Digital - CLUQ AI SOLUTIONS</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .project-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        .section-icon {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #007bff;
-            color: white;
-            margin-right: 12px;
-            font-size: 16px;
-        }
-        
-        .card-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 16px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            padding-bottom: 12px;
-        }
-        
-        .card-header h3 {
-            margin: 0;
-            font-size: 1.2em;
-            color: #333333;
-            font-weight: 600;
-        }
-        
-        .project-content {
-            padding: 0;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .project-content p {
-            margin: 0.5em 0;
-            font-size: 0.95em;
-            line-height: 1.5;
-            color: #444444;
-        }
-        
-        .key-metrics {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        
-        .key-metric {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 8px;
-            font-size: 0.9em;
-            color: #444444;
-        }
-        
-        .key-metric i {
-            width: 28px;
-            height: 28px;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            background-color: rgba(0, 123, 255, 0.1);
-            color: #007bff;
-            margin-right: 10px;
-            font-size: 14px;
-        }
-        
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-        
-        .tech-tag {
-            background: rgba(0, 123, 255, 0.08);
-            border: 1px solid rgba(0, 123, 255, 0.3);
-            border-radius: 15px;
-            padding: 4px 10px;
-            font-size: 0.8em;
-            color: #007bff;
-        }
-        
-        .project-overview {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .two-column-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .project-header {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .project-header img {
-            max-height: 300px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Make project detail section more compact */
-        .project-detail {
-            padding-top: 0;
-        }
-        
-        .page-hero {
-            padding-bottom: 16px;
-        }
-        
-        @media (max-width: 768px) {
-            .project-overview,
-            .key-metrics,
-            .two-column-section {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">Anmeldung Digital</h1>
-            <p class="animate-fade">AI-powered digital registration system</p>
+
+    <header class="site-header">
+        <div class="container navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
+            </a>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="../portfolio.html" class="nav-link active">Solutions</a></li>
+                    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    
-    <main>
-        <section class="project-detail">
-            <div class="project-header">
-                <img src="../assets/Anmeldungassist.png" alt="Anmeldung Digital" class="project-image">
+    </header>
+
+    <main class="project-page-main">
+        <!-- Hero Section -->
+        <section class="page-hero-section project-hero section-padding" id="project-hero-anmeldungdigital">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container text-center">
+                <h1 class="hero-headline project-name-headline">Anmeldung Digital</h1>
+                <p class="hero-subheadline project-tagline">Simplifying Bureaucracy with Intelligent Automation.</p>
             </div>
-            
-            <div class="project-content">
-                <!-- About Card -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <div class="section-icon">
-                            <i class="fas fa-info-circle"></i>
-                        </div>
-                        <h3>Overview</h3>
-                    </div>
-                    <p>An innovative digital system that streamlines the bureaucratic process of registering residency in Germany using AI to automate form-filling, document verification, and appointment scheduling.</p>
+        </section>
+
+        <!-- Overview/About the Project Section -->
+        <section class="project-overview-section section-padding" id="overview">
+            <div class="container">
+                <h2 class="section-title">The Vision Behind Anmeldung Digital</h2>
+                <p>Anmeldung Digital is an innovative system conceptualized by CLUQ AI SOLUTIONS to address the complexities of Germany's residency registration process (Anmeldung). Recognizing the bureaucratic hurdles faced by newcomers and the administrative burden on local offices, this project aims to leverage Artificial Intelligence to create a seamless, user-friendly digital experience. The core idea is to automate form-filling, intelligently verify documents, and streamline appointment scheduling, making the entire process faster, more accessible, and less prone to errors.</p>
+            </div>
+        </section>
+
+        <!-- The Challenge Section -->
+        <section class="project-challenge-section section-padding bg-light-gray" id="challenge">
+            <div class="container">
+                <h2 class="section-title">The Anmeldung Challenge: A Need for Modernization</h2>
+                <ul class="challenge-list">
+                    <li><strong>Complexity:</strong> Navigating the required forms and understanding the necessary documentation can be daunting, especially for those unfamiliar with German bureaucracy or language.</li>
+                    <li><strong>Long Waiting Times:</strong> Securing appointments and the processing itself can involve significant delays.</li>
+                    <li><strong>Language Barriers:</strong> Forms and interactions are primarily in German, creating obstacles for non-German speakers.</li>
+                    <li><strong>Manual Processing:</strong> Reliance on manual checks and data entry by administrative staff can lead to inefficiencies and potential errors.</li>
+                    <li><strong>Accessibility Issues:</strong> Limited digital options mean physical presence is often required, which can be inconvenient.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Our Proposed Solution Section -->
+        <section class="project-solution-section section-padding" id="solution">
+            <div class="container">
+                <h2 class="section-title">Intelligent Automation for a Smoother Anmeldung</h2>
+                <p>CLUQ AI SOLUTIONS proposes an AI-powered platform for Anmeldung Digital that will guide users through the registration process step-by-step. Key components include:</p>
+                <ul class="solution-list">
+                    <li><strong>AI-Powered Form Filling:</strong> An interactive digital form that uses AI to ask relevant questions in multiple languages and intelligently populates the official Anmeldung form.</li>
+                    <li><strong>Document Recognition and Verification:</strong> Users will be able to upload or scan required documents (e.g., passport, rental agreement). AI (OCR and pattern recognition) will extract relevant information and perform initial verification checks for completeness and consistency.</li>
+                    <li><strong>Smart Appointment Scheduling:</strong> Integration with local registration office calendars (where APIs permit) or an intelligent system to suggest optimal appointment times and manage bookings.</li>
+                    <li><strong>Automated Error Checking:</strong> The system will flag potential issues or missing information before final submission, reducing rejections and follow-up appointments.</li>
+                    <li><strong>Secure Data Handling:</strong> Ensuring all personal data is handled with the utmost security and in compliance with data protection regulations (e.g., GDPR).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Potential Impact Section -->
+        <section class="project-impact-section section-padding bg-light-gray" id="impact">
+            <div class="container">
+                <h2 class="section-title">Envisioned Benefits of Anmeldung Digital</h2>
+                <ul class="impact-list">
+                    <li><strong>Significantly Reduce Processing Time:</strong> By automating manual tasks and reducing errors, the overall time taken for both users and administrative staff could be substantially decreased.</li>
+                    <li><strong>Enhance User Experience:</strong> Provide a clear, intuitive, and multilingual interface, making the process less stressful for individuals, especially expatriates and new residents.</li>
+                    <li><strong>Improve Administrative Efficiency:</strong> Free up local government staff from repetitive data entry and document checks, allowing them to focus on more complex cases and citizen support.</li>
+                    <li><strong>Increase Accessibility:</strong> Offer a fully digital pathway, reducing the need for physical visits for initial steps.</li>
+                    <li><strong>Promote Digitalization in Public Services:</strong> Serve as a model for how AI can be effectively applied to modernize other governmental processes.</li>
+                    <li><strong>Foster Community Well-being:</strong> By simplifying a critical integration step for new residents, it can contribute to a more welcoming and efficient settlement experience.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="project-features-section section-padding" id="features">
+            <div class="container">
+                <h2 class="section-title">Core Functionalities (Conceptual)</h2>
+                <div class="features-grid">
+                    <div class="feature-item"><i class="fas fa-language"></i> Multilingual user interface and guidance.</div>
+                    <div class="feature-item"><i class="fas fa-magic"></i> AI-assisted form completion.</div>
+                    <div class="feature-item"><i class="fas fa-file-alt"></i> Optical Character Recognition (OCR) for document scanning.</div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i> Automated pre-submission validation checks.</div>
+                    <div class="feature-item"><i class="fas fa-user-shield"></i> Secure user accounts and data storage.</div>
+                    <div class="feature-item"><i class="fas fa-calendar-alt"></i> Appointment scheduling and management module.</div>
+                    <div class="feature-item"><i class="fas fa-file-invoice"></i> Generation of a completed digital Anmeldung form.</div>
+                    <div class="feature-item"><i class="fas fa-tasks"></i> Progress tracking and notifications.</div>
                 </div>
-                
-                <!-- Project Overview Section with Challenge and Solution -->
-                <div class="project-overview">
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-exclamation-triangle"></i>
-                            </div>
-                            <h3>The Challenge</h3>
-                        </div>
-                        <p>The traditional Anmeldung process in Germany is notorious for its complexity, long waiting times, and language barriers that create significant challenges for newcomers and administrative staff.</p>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h3>Our Solution</h3>
-                        </div>
-                        <p>Intelligent automation where users scan documents for automatic processing with multi-language guidance. The system flags potential issues before submission and provides digital certificates upon completion.</p>
-                    </div>
-                </div>
-                
-                <!-- Two Column Layout for Features and Impact -->
-                <div class="two-column-section">
-                    <!-- Key Features -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h3>Key Features</h3>
-                        </div>
-                        <div class="key-metrics">
-                            <div class="key-metric">
-                                <i class="fas fa-file-alt"></i>
-                                <span>Automated document recognition</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-language"></i>
-                                <span>Multi-language support</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-calendar-check"></i>
-                                <span>Smart appointment scheduling</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-fingerprint"></i>
-                                <span>Secure identity verification</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-database"></i>
-                                <span>Government database integration</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Impact Section -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <div class="section-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Impact</h3>
-                        </div>
-                        <div class="key-metrics">
-                            <div class="key-metric">
-                                <i class="fas fa-tachometer-alt"></i>
-                                <span><strong>85%</strong> reduction in processing time</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-check-circle"></i>
-                                <span><strong>93%</strong> fewer form errors</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-building"></i>
-                                <span><strong>76%</strong> fewer in-person visits</span>
-                            </div>
-                            <div class="key-metric">
-                                <i class="fas fa-smile-beam"></i>
-                                <span>Satisfaction: <strong>2.1→8.7/10</strong></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Technologies Used -->
-                <div class="project-card">
-                    <div class="card-header">
-                        <div class="section-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Technologies</h3>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag"><i class="fas fa-file-invoice"></i> OCR</span>
-                        <span class="tech-tag"><i class="fas fa-comment-alt"></i> NLP</span>
-                        <span class="tech-tag"><i class="fas fa-lock"></i> Secure Authentication</span>
-                        <span class="tech-tag"><i class="fas fa-link"></i> Blockchain</span>
-                        <span class="tech-tag"><i class="fas fa-chart-line"></i> Predictive Analytics</span>
-                    </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="project-tech-section section-padding bg-light-gray" id="technologies">
+            <div class="container">
+                <h2 class="section-title">Core Technologies (Conceptual)</h2>
+                <ul class="tech-list">
+                    <li><strong>AI/Machine Learning:</strong> For NLP (form assistance, language), OCR, data validation, and potentially predictive analytics for appointment optimization.</li>
+                    <li><strong>Web Technologies:</strong> Secure web platform (e.g., Python/Django or Node.js backend, modern JavaScript frontend framework like React or Vue).</li>
+                    <li><strong>Database:</strong> Secure and scalable database for user data and application state.</li>
+                    <li><strong>Cloud Hosting:</strong> For scalability and reliability.</li>
+                    <li><strong>APIs:</strong> For potential integrations with government systems (if available and permissible).</li>
+                    <li><strong>Security Protocols:</strong> End-to-end encryption, GDPR compliance measures.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Current Development Stage Section -->
+        <section class="project-status-section section-padding" id="status">
+            <div class="container">
+                <h2 class="section-title">Project Status</h2>
+                <p>Status: In Development. CLUQ AI SOLUTIONS is currently in the process of refining the detailed system architecture, developing core AI models for document processing and form assistance, and designing the user interface. Initial prototypes for specific modules are being built.</p>
+                 <div class="text-center" style="margin-top: 30px;">
+                    <a href="../portfolio.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Solutions</a>
                 </div>
             </div>
         </section>
     </main>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../portfolio.html">Solutions</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../faq.html">FAQ</a></li> 
+                        <li><a href="../agb.html">Terms & Conditions</a></li>
+                        <li><a href="../impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../agb.html">AGB</a></li>
-                    <li><a href="../impressum.html">Impressum</a></li>
-                    <li><a href="../faq.html">FAQ</a></li>
-                </ul>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+            });
+        }
+    </script>
 </body>
 </html>

@@ -2,244 +2,177 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-    <!-- Cache-busting meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <title>CLUQ AI SOLUTIONS - AI-Powered Innovation for Community and Growth</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            zoom: 0.9;
-        }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
+
+    <header class="site-header">
+        <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
-                <span class="brand-name">CLUQ AI</span>
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
             </a>
-            
-            <button class="hamburger" id="navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item nav-dropdown">
-                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
-                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
-                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
-                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
-                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
-                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">CLUQ AI SOLUTIONS</h1>
-            <p class="animate-fade">Empowering communities through AI innovation</p>
-            <p class="hero-subtitle animate-fade">We build cutting-edge AI solutions that drive sustainability, enhance public services, and foster community building.</p>
-            <a href="contact.html" class="cta-button animate-fade">Get Started</a>
-        </div>
-        <div class="scroll-down-indicator">
-            <span class="scroll-arrow"></span>
-        </div>
-    </section>
-    
-    <section class="company-intro">
-        <h2>Crafting AI Solutions with Purpose</h2>
-        <p>At CLUQ AI SOLUTIONS, we specialize in developing innovative artificial intelligence systems that solve real-world problems. Our technologies empower communities, enhance sustainability initiatives, and transform how public services operate.</p>
-        <p>Based in Berlin, our team of AI specialists, engineers, and designers create custom solutions that make a meaningful difference in how organizations function and communities thrive.</p>
-    </section>
-    
     <main>
-        <section class="featured-projects reveal-on-scroll">
-            <h2 style="color: #007bff; font-size: 2.2rem; margin-bottom: 2rem; text-align: center;">Our Solutions</h2>
-            
-            <div class="portfolio-grid" style="max-width: 1200px; margin: 0 auto;">
-                <!-- TreasureBot -->
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
-                    <a href="projects/treasurebot.html" style="text-decoration: none; color: inherit; display: block;">
-                        <img src="assets/Treasurebot.png" alt="TreasureBot" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
-                        <div style="padding: 1.5rem;">
-                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">TreasureBot</h3>
-                            <p style="color: #666; margin-bottom: 1rem;">AI-powered autonomous waste management system</p>
-                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-robot" style="margin-right: 0.3rem;"></i> Robotics
-                                </span>
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> AI
-                                </span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="color: #007bff; font-weight: 500;">View Details</span>
-                                <a href="https://treasurebot.eu/" target="_blank" onclick="event.stopPropagation();" style="width: 32px; height: 32px; background-color: rgba(0, 123, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #007bff;">
-                                    <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
+        <section class="hero-section" id="hero">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container">
+                <div class="hero-text">
+                    <h1 class="hero-headline">AI-Powered Innovation for Community Efficiency and Sustainable Growth</h1>
+                    <p class="hero-subheadline">CLUQ AI SOLUTIONS: Developing smart AI for efficient communities and sustainable growth. We are building intelligent, automated software to address everyday challenges for individuals, local governments, and businesses.</p>
+                    <a href="portfolio.html" class="btn btn-primary hero-cta">Discover Our Vision</a>
                 </div>
-                
-                <!-- Fashion AI -->
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
-                    <a href="projects/fashionai.html" style="text-decoration: none; color: inherit; display: block;">
-                        <img src="assets/fassionai.png" alt="Fashion AI" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
-                        <div style="padding: 1.5rem;">
-                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">Fashion AI</h3>
-                            <p style="color: #666; margin-bottom: 1rem;">AI-powered personalized styling platform</p>
-                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-tshirt" style="margin-right: 0.3rem;"></i> Fashion
-                                </span>
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> AI
-                                </span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="color: #007bff; font-weight: 500;">View Details</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Global Pickups -->
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
-                    <a href="projects/globalpickups.html" style="text-decoration: none; color: inherit; display: block;">
-                        <img src="assets/globalpickups.png" alt="Global Pickups" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
-                        <div style="padding: 1.5rem;">
-                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">Global Pickups</h3>
-                            <p style="color: #666; margin-bottom: 1rem;">Peer-to-peer delivery platform</p>
-                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-truck" style="margin-right: 0.3rem;"></i> Delivery
-                                </span>
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-users" style="margin-right: 0.3rem;"></i> P2P
-                                </span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="color: #007bff; font-weight: 500;">View Details</span>
-                                <a href="https://globalpickups.com/" target="_blank" onclick="event.stopPropagation();" style="width: 32px; height: 32px; background-color: rgba(0, 123, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #007bff;">
-                                    <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="text-center" style="margin-top: 40px; text-align: center;">
-                <a href="portfolio.html" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 25px; font-size: 1rem; text-decoration: none; border-radius: 30px; transition: all 0.3s ease;">
-                    View All Projects <i class="fas fa-arrow-right"></i>
-                </a>
             </div>
         </section>
-        
-        <!-- Our Approach Section with compact layout -->
-        <section class="compact-approach" style="background-color: #f8f9fa; padding: 60px 0;">
+
+        <section class="introduction-section section-padding" id="introduction">
             <div class="container">
-                <h2 style="color: #007bff; font-size: 2rem; margin-bottom: 3rem; text-align: center;">Our Approach</h2>
-                
-                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 30px;">
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-lightbulb" style="color: white; font-size: 28px;"></i>
-                        </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Understand</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">We begin by deeply understanding your challenges, goals, and processes.</p>
-                    </div>
-                    
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-chart-line" style="color: white; font-size: 28px;"></i>
-                        </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Analyze</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">Our experts analyze data, identify patterns, and determine optimal AI approaches.</p>
-                    </div>
-                    
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-cogs" style="color: white; font-size: 28px;"></i>
-                        </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Develop</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">We custom-build AI solutions tailored to your specific needs and objectives.</p>
-                    </div>
-                    
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-rocket" style="color: white; font-size: 28px;"></i>
-                        </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Implement</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">Our team ensures smooth implementation with training and support.</p>
+                <h2 class="section-title">Pioneering AI for Everyday Impact</h2>
+                <div class="introduction-content">
+                    <div class="intro-text-column">
+                        <p>At CLUQ AI SOLUTIONS, we are passionate about harnessing the potential of Artificial Intelligence to develop practical, time-saving software. Our focus is on creating smart automation that simplifies processes and enhances efficiency for both individuals and organizations.</p>
+                        <p>While we are at the foundational stage of our journey, our commitment is firm: to contribute to community well-being, promote environmental sustainability, and drive digitalization. We are exploring innovative ways AI can make a tangible difference in daily life.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="focus-areas-section section-padding bg-light-gray" id="focus-areas">
+            <div class="container">
+                <h2 class="section-title">AI Solutions for a Smarter Future</h2>
+                <p class="section-intro">We are currently focusing our development efforts on AI-driven solutions that address key challenges in:</p>
+                <div class="focus-areas-grid">
+                    <div class="focus-area-card">
+                        <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                        <h3 class="card-title">Streamlining Public Services</h3>
+                        <p class="card-description">Developing AI tools to help local governments automate routine tasks, improve resource allocation, and enhance the delivery of essential services to the community.</p>
+                    </div>
+                    <div class="focus-area-card">
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="card-title">Enhancing Community Engagement</h3>
+                        <p class="card-description">Exploring AI applications that can foster better communication, gather valuable feedback, and create more inclusive and responsive community platforms.</p>
+                    </div>
+                    <div class="focus-area-card">
+                        <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                        <h3 class="card-title">Promoting Sustainable Practices</h3>
+                        <p class="card-description">Conceptualizing AI-powered systems to support environmental sustainability, such as optimizing resource usage or promoting greener choices within communities and businesses.</p>
+                    </div>
+                    <div class="focus-area-card">
+                        <div class="card-icon"><i class="fas fa-store-alt"></i></div>
+                        <h3 class="card-title">Empowering Small Businesses</h3>
+                        <p class="card-description">Designing intelligent automation tools that can help small and medium-sized businesses save time, improve efficiency, and leverage data for smarter decision-making.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="approach-section section-padding" id="approach">
+            <div class="container">
+                <h2 class="section-title">Grounded in Expertise, Driven by Vision</h2>
+                <div class="approach-content">
+                    <div class="approach-text">
+                        <p>Our approach to AI development is rooted in a practical understanding of real-world needs. We prioritize creating solutions that are not only technologically advanced but also user-centric and easy to integrate.</p>
+                        <p>We are committed to ethical AI principles, ensuring transparency and fairness in our development process and the solutions we build.</p>
+                        <p>Collaboration is key to our innovation. We aim to work closely with communities and partners to ensure our AI tools deliver meaningful and sustainable impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="insights-section section-padding bg-light-gray" id="insights">
+            <div class="container">
+                <h2 class="section-title">Exploring the Potential of AI</h2>
+                <p class="section-intro">As we continue to grow and develop our core solutions, we are actively researching and conceptualizing the next wave of AI-powered tools. Our current explorations include areas like:</p>
+                <div class="insights-list">
+                    <div class="insight-item">
+                        <div class="insight-icon"><i class="fas fa-city"></i></div>
+                        <h3 class="insight-title">AI for intelligent urban service management.</h3>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-icon"><i class="fas fa-user-shield"></i></div>
+                        <h3 class="insight-title">Personalized digital experiences through ethical AI.</h3>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 class="insight-title">AI-driven insights for sustainable resource allocation.</h3>
+                    </div>
+                </div>
+                <p class="insights-conclusion">Stay tuned as we refine these concepts and work towards bringing innovative solutions to life. Future updates and articles will be shared here.</p>
+            </div>
+        </section>
+
+        <section class="footer-cta-section section-padding bg-dark-blue text-light" id="footer-cta">
+            <div class="container text-center">
+                <h2 class="section-title">Let's Shape the Future with AI</h2>
+                <p class="cta-text">Interested in learning more about our vision or exploring potential collaborations? We'd love to hear from you.</p>
+                <a href="contact.html" class="btn btn-primary cta-button">Contact Us</a>
             </div>
         </section>
     </main>
-    
-    <section class="cta-section">
+
+    <footer class="site-footer section-padding">
         <div class="container">
-            <h2>Ready to transform your business with AI?</h2>
-            <p>Contact us today to discuss how we can help you leverage innovative AI solutions for sustainable growth.</p>
-            <a href="contact.html" class="cta-button">
-                Get in Touch →
-            </a>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li> 
+                        <li><a href="agb.html">Terms & Conditions</a></li>
+                        <li><a href="impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+            });
+        }
+    </script>
 </body>
 </html>

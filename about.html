@@ -2,136 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-    <!-- Cache-busting meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>About - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <title>About Us - CLUQ AI SOLUTIONS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            zoom: 0.9;
-        }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
+
+    <header class="site-header">
+        <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
-                <span class="brand-name">CLUQ AI</span>
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
             </a>
-            
-            <button class="hamburger" id="navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link active">About</a>
-                </li>
-                <li class="nav-item nav-dropdown">
-                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
-                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
-                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
-                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
-                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
-                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">About CLUQ AI SOLUTIONS</h1>
-            <p class="animate-fade">Transforming the Future with AI</p>
-        </div>
-    </section>
-    
+
     <main>
-        <section class="reveal-on-scroll">
-            <h2>Who We Are</h2>
-            <p>CLUQ AI SOLUTIONS is an innovative AI SaaS company based in Berlin. We are dedicated to delivering cutting-edge AI solutions that empower community building, drive sustainability, and enhance public services.</p>
-            <p>With a portfolio of 6 advanced products, we're already making waves in the public, government, and corporate sectors.</p>
+        <!-- Hero/Introduction Section -->
+        <section class="page-hero-section about-hero section-padding" id="about-hero">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container text-center">
+                <h1 class="hero-headline">Driven by AI, Focused on Impact: Building a Smarter Tomorrow</h1>
+                <p class="hero-subheadline page-intro-text">
+                    CLUQ AI SOLUTIONS is dedicated to harnessing the power of Artificial Intelligence to create smart, efficient, time-saving, and automated software solutions. Our core mission is to address everyday challenges faced by individuals, local governments, and businesses, with a steadfast commitment to fostering community well-being, promoting environmental sustainability, and driving digitalization for a smarter future. While we are in our foundational stages, our vision is clear: to leverage AI's potential to develop practical applications that deliver significant real-world value and contribute positively to society.
+                </p>
+            </div>
         </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>Our Mission</h2>
-            <p>At CLUQ AI SOLUTIONS, our mission is to democratize artificial intelligence technology, making it accessible and usable for communities, public services, and sustainability initiatives. We believe AI has the potential to transform society for the better, and we're committed to creating solutions that have positive real-world impact.</p>
+
+        <!-- "Our Genesis" Section -->
+        <section class="about-genesis-section section-padding" id="genesis">
+            <div class="container">
+                <h2 class="section-title">The Spark Behind CLUQ AI: Our Journey Begins</h2>
+                <div class="genesis-content">
+                    <p>CLUQ AI SOLUTIONS was born from a clear observation: while Artificial Intelligence holds immense promise, its practical application in everyday community and business settings often lags behind its potential. We saw an opportunity to bridge this gap—to translate complex AI capabilities into accessible, user-friendly software that solves tangible problems and enhances daily life.</p>
+                    <p>As a new company, we are driven by the passion to innovate and the ambition to make a difference. Our journey starts with a focus on building intelligent tools that streamline processes, foster sustainability, and empower communities through digitalization. We understand that building impactful solutions takes time and dedication, and we are committed to an iterative process of learning, development, and refinement as we grow.</p>
+                </div>
+            </div>
         </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>Our Approach</h2>
-            <p>We follow a collaborative and community-centered approach to AI solution development:</p>
-            <ol>
-                <li><strong>Understand:</strong> We begin by deeply understanding community and sustainability challenges.</li>
-                <li><strong>Analyze:</strong> We analyze data and processes to identify the best AI approach.</li>
-                <li><strong>Develop:</strong> We develop custom AI solutions tailored to specific needs.</li>
-                <li><strong>Implement:</strong> We ensure smooth implementation with community involvement.</li>
-                <li><strong>Optimize:</strong> We continuously monitor and optimize performance to deliver maximum value.</li>
-            </ol>
+
+        <!-- "Our Mission & Vision" Section -->
+        <section class="mission-vision-section section-padding bg-light-gray" id="mission-vision">
+            <div class="container">
+                <h2 class="section-title">Our Guiding Mission, Our Vision for the Future</h2>
+                <div class="mission-vision-grid">
+                    <div class="mission-column">
+                        <h3 class="sub-section-title"><i class="fas fa-bullseye-arrow"></i> Our Mission</h3>
+                        <p>Our mission is to develop intelligent AI-driven software that empowers individuals, enhances public services, and supports sustainable business practices. We aim to simplify complexities, automate routines, and unlock new efficiencies, making advanced technology a beneficial and accessible tool for all. We believe in the transformative power of AI to not just optimize tasks, but to improve quality of life and foster positive societal development.</p>
+                    </div>
+                    <div class="vision-column">
+                        <h3 class="sub-section-title"><i class="fas fa-binoculars"></i> Our Vision</h3>
+                        <p>We envision a future where AI seamlessly integrates into our communities and workplaces, acting as a catalyst for positive change. CLUQ AI SOLUTIONS aspires to be at the forefront of this transformation, pioneering solutions that lead to more efficient governance, more sustainable environments, and more connected communities. Our long-term goal is to contribute to a world where technology thoughtfully serves humanity, helping to solve some of our most pressing everyday challenges with intelligence and foresight.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section class="reveal-on-scroll">
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> team@cluq.eu</p>
+
+        <!-- "Our Values" Section -->
+        <section class="values-section section-padding" id="values">
+            <div class="container">
+                <h2 class="section-title">The Principles That Drive Us</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-lightbulb-on"></i></div>
+                        <h3 class="value-title">Innovation for Impact</h3>
+                        <p class="value-description">We are committed to exploring and applying cutting-edge AI techniques, not for novelty's sake, but to create practical, impactful solutions. Our innovation is purpose-driven, always aimed at delivering tangible benefits.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-shield-check"></i></div>
+                        <h3 class="value-title">Integrity and Transparency</h3>
+                        <p class="value-description">We believe that trust is paramount. We operate with honesty, building our solutions and relationships on a foundation of ethical AI development and transparent communication about our progress and capabilities.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="value-title">Community-Centric Development</h3>
+                        <p class="value-description">Our solutions are designed with people and communities at their core. We strive to understand real-world needs and develop AI tools that are inclusive, beneficial, and contribute to collective well-being.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 class="value-title">Commitment to Sustainability</h3>
+                        <p class="value-description">We recognize the importance of long-term thinking. We are dedicated to developing and promoting AI solutions that support environmental sustainability and responsible resource management.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-chart-line-up"></i></div>
+                        <h3 class="value-title">Pragmatic Progress</h3>
+                        <p class="value-description">As a developing company, we value focused effort and iterative advancement. We are dedicated to learning, adapting, and consistently moving forward in our mission to build valuable AI solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Our Team" Section -->
+        <section class="team-section section-padding bg-light-gray" id="team">
+            <div class="container">
+                <h2 class="section-title">Our Dedicated Team</h2>
+                <div class="team-content text-center">
+                    <p>CLUQ AI SOLUTIONS is powered by a dedicated team of innovators, technologists, and forward-thinkers who are passionate about the potential of Artificial Intelligence. While we are lean and focused in our current foundational stage, our collective expertise and shared vision drive our commitment to excellence. We are united by the goal of building a company that not only pioneers smart AI solutions but also contributes meaningfully to our communities and the broader digital landscape. Every step we take is fueled by a desire to learn, grow, and ultimately, deliver on our promise.</p>
+                    <!-- Placeholder for future team images/profiles if needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- "Join Our Journey" / "Looking Ahead" Section -->
+        <section class="journey-section section-padding" id="journey">
+            <div class="container text-center">
+                <h2 class="section-title">Shaping the Future Together</h2>
+                <div class="journey-content">
+                    <p>The journey of CLUQ AI SOLUTIONS is just beginning, and we are incredibly excited about the future. We are actively developing our initial suite of AI-driven software solutions, focusing on areas where we believe we can make the most significant positive impact. Our commitment is to grow thoughtfully, building a portfolio of tools that are not only innovative but also robust and reliable.</p>
+                    <p>We believe in the power of collaboration to accelerate progress. As we move forward, we welcome conversations with potential partners, future clients, and community stakeholders who share our vision for a more efficient, sustainable, and intelligent future. Let's explore how we can shape this future together.</p>
+                    <a href="contact.html" class="btn btn-primary journey-cta">Connect With Us</a>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to take your business to the next level?</h2>
-            <p>Contact us today to discuss how we can help you leverage AI technology.</p>
-        </div>
-        <div class="cta-button-container">
-            <a href="contact.html" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li> 
+                        <li><a href="agb.html">Terms & Conditions</a></li>
+                        <li><a href="impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+            });
+        }
+    </script>
 </body>
 </html>

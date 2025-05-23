@@ -2,145 +2,207 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-    <!-- Cache-busting meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>FAQ - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            zoom: 0.9;
-        }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
+
+    <header class="site-header">
+        <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
-                <span class="brand-name">CLUQ AI</span>
+                <span class="brand-name">CLUQ AI SOLUTIONS</span>
             </a>
-            
-            <button class="hamburger" id="navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item nav-dropdown">
-                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
-                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
-                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
-                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
-                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
-                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link active">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <nav class="nav-menu-container">
+                <button class="hamburger" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link active">FAQ</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
-        <div class="hero-content">
-            <h1 class="animate-fade">Frequently Asked Questions</h1>
-            <p class="animate-fade">Find answers to common questions about our AI solutions and services</p>
-        </div>
-    </section>
-    
-    <main>
-        <section class="faq-section">
-            <div class="faq-item reveal-on-scroll">
-                <h2>What industries do you serve?</h2>
-                <p>We provide AI solutions for a wide range of industries including healthcare, finance, manufacturing, retail, logistics, and more. Our technologies are adaptable to most business contexts and can be customized to your specific industry needs.</p>
-            </div>
-            
-            <div class="faq-item reveal-on-scroll">
-                <h2>How much does an AI solution cost?</h2>
-                <p>The cost of an AI solution varies depending on the complexity, scale, and specific requirements of your project. We offer different pricing models including fixed project fees, subscription-based services, and outcome-based pricing. Contact us for a personalized quote.</p>
-            </div>
-            
-            <div class="faq-item reveal-on-scroll">
-                <h2>Do I need a large amount of data to use AI?</h2>
-                <p>While having more data typically improves AI performance, we can work with various data scenarios. For organizations with limited data, we can employ techniques like transfer learning, data augmentation, or synthetic data generation to build effective solutions.</p>
-            </div>
-            
-            <div class="faq-item reveal-on-scroll">
-                <h2>How long does it take to implement an AI solution?</h2>
-                <p>Implementation timelines vary based on project complexity and scope. Simple projects might take a few weeks, while more complex enterprise-wide systems could take several months. We follow an agile approach, often delivering value in incremental phases rather than waiting for complete implementation.</p>
-            </div>
-            
-            <div class="faq-item reveal-on-scroll">
-                <h2>How do you ensure data privacy and security?</h2>
-                <p>We take data security very seriously. Our solutions comply with relevant regulations like GDPR and CCPA. We implement encryption, secure access protocols, and can deploy solutions on-premises or in private clouds if needed. We sign comprehensive data processing agreements and can work with your security team to address any specific concerns.</p>
-            </div>
-            
-            <div class="faq-item reveal-on-scroll">
-                <h2>Do you offer support after implementation?</h2>
-                <p>Yes, we provide ongoing support and maintenance for all our solutions. We offer different support tiers ranging from basic email support to 24/7 dedicated support. We can also train your team to manage the system internally and provide knowledge transfer as needed.</p>
-            </div>
-            
-            <div class="faq-item reveal-on-scroll">
-                <h2>Can your solutions integrate with our existing systems?</h2>
-                <p>Yes, our solutions are designed with interoperability in mind. We can integrate with most common enterprise systems, databases, and APIs. During the initial assessment phase, we'll evaluate your current technology stack and design the solution to work seamlessly with your existing infrastructure.</p>
+
+    <main class="page-main-content">
+        <section class="page-hero-section section-padding" id="faq-hero">
+            <div class="hero-background-overlay"></div>
+            <div class="container hero-content-container text-center">
+                <h1 class="hero-headline">Frequently Asked Questions</h1>
+                <p class="hero-subheadline">Find answers to common questions about CLUQ AI SOLUTIONS, our projects, and our approach to AI development.</p>
             </div>
         </section>
+
+        <section class="faq-content-section section-padding" id="faq-list">
+            <div class="container">
+                <div class="faq-wrapper">
+                    <div class="faq-item reveal-on-scroll">
+                        <h2 class="faq-question"><span class="faq-question-text">What kind of AI solutions does CLUQ AI SOLUTIONS develop?</span><span class="faq-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                        <div class="faq-answer">
+                            <p>CLUQ AI SOLUTIONS focuses on developing practical AI-driven software to address challenges in community well-being, environmental sustainability, and process digitalization. Our projects range from tools for streamlining public services and enhancing community engagement to platforms for personal data empowerment and sustainable practices. As an early-stage company, many of our solutions are currently in development or concept phase.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item reveal-on-scroll">
+                        <h2 class="faq-question"><span class="faq-question-text">What is the current stage of your projects?</span><span class="faq-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                        <div class="faq-answer">
+                            <p>Most of our projects are in the "Concept Phase" or "In Development." This means we are actively researching, designing, and building the core functionalities. We are committed to an iterative development process and will share more specific details and milestones as they become available. Please refer to our Portfolio page for the current status of individual projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal-on-scroll">
+                        <h2 class="faq-question"><span class="faq-question-text">Who is your target audience?</span><span class="faq-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                        <div class="faq-answer">
+                            <p>Our solutions are designed for a diverse audience, including:</p>
+                            <ul>
+                                <li>Local governments (municipalities, city councils) seeking to improve public services and efficiency.</li>
+                                <li>Small to medium-sized businesses (SMBs) looking for AI-driven automation and time-saving tools.</li>
+                                <li>Community organizations aiming to enhance engagement and sustainability.</li>
+                                <li>Individuals who can benefit from smarter, more efficient digital tools in their daily lives.</li>
+                                <li>Potential partners, including technology companies and research institutions.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal-on-scroll">
+                        <h2 class="faq-question"><span class="faq-question-text">How does CLUQ AI SOLUTIONS ensure ethical AI development?</span><span class="faq-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                        <div class="faq-answer">
+                            <p>Ethical considerations are central to our development philosophy. We are committed to building AI solutions that are fair, transparent, and respectful of user privacy. This includes focusing on data security, avoiding bias in our algorithms where possible, and being clear about how our AI models make decisions. We aim to develop AI that serves humanity positively and responsibly.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal-on-scroll">
+                        <h2 class="faq-question"><span class="faq-question-text">How can I learn more about a specific project?</span><span class="faq-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                        <div class="faq-answer">
+                            <p>Our <a href="portfolio.html" class="text-link">Portfolio page</a> provides an overview of our current projects and their development status. Each project listed there will have a link to its dedicated page with more detailed information about its vision, the challenges it addresses, and its proposed features. As projects mature, we will update these pages with more specific information.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal-on-scroll">
+                        <h2 class="faq-question"><span class="faq-question-text">Are you open to collaborations or partnerships?</span><span class="faq-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                        <div class="faq-answer">
+                            <p>Yes, absolutely! We believe that collaboration is key to innovation and achieving impactful results. We are open to discussing partnerships with other technology companies, research institutions, community organizations, and potential clients who share our vision for leveraging AI for positive change. Please <a href="contact.html" class="text-link">contact us</a> to explore potential synergies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item reveal-on-scroll">
+                        <h2 class="faq-question"><span class="faq-question-text">Where is CLUQ AI SOLUTIONS based?</span><span class="faq-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                        <div class="faq-answer">
+                            <p>CLUQ AI SOLUTIONS is based in Berlin, Germany. You can find our contact details on the <a href="impressum.html" class="text-link">Impressum</a> page.</p>
+                        </div>
+                    </div>
+
+                </div> <!-- /.faq-wrapper -->
+            </div> <!-- /.container -->
+        </section>
     </main>
-    
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to take your business to the next level?</h2>
-            <p>Contact us today to discuss how we can help you leverage AI technology.</p>
-        </div>
-        <div class="cta-button-container">
-            <a href="contact.html" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-info">
+                    <h3 class="footer-heading">CLUQ AI SOLUTIONS</h3>
+                    <p>Email: <a href="mailto:info@cluqai.com">info@cluqai.com</a></p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li> 
+                        <li><a href="agb.html">Terms & Conditions</a></li>
+                        <li><a href="impressum.html">Impressum / Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                         <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+            <div class="footer-copyright text-center">
+                <p>&copy; <span id="current-year"></span> CLUQ AI SOLUTIONS. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Basic script for current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Basic hamburger menu toggle 
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navbarToggle && navMenu) {
+            navbarToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                navbarToggle.setAttribute('aria-expanded', isExpanded);
+                 const icon = navbarToggle.querySelector('i');
+                if (icon) {
+                    if (isExpanded) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        }
+        // Scroll reveal (can be moved to main.js if it gets more complex)
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        const revealObserverOptions = { threshold: 0.1 };
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealObserverOptions);
+        revealElements.forEach(element => {
+            revealObserver.observe(element);
+        });
+
+        // FAQ Toggle
+        const faqItems = document.querySelectorAll('.faq-item h2.faq-question');
+        faqItems.forEach((item) => {
+            const answer = item.nextElementSibling;
+            if (answer && answer.classList.contains('faq-answer')) {
+                answer.style.display = 'none'; // Start with answers hidden
+
+                item.addEventListener('click', function() {
+                    const isCurrentlyOpen = answer.style.display === 'block';
+                    answer.style.display = isCurrentlyOpen ? 'none' : 'block';
+                    this.classList.toggle('active', !isCurrentlyOpen);
+                    
+                    const icon = this.querySelector('.faq-icon i');
+                    if (icon) {
+                        if (!isCurrentlyOpen) {
+                            icon.classList.remove('fa-chevron-down');
+                            icon.classList.add('fa-chevron-up');
+                        } else {
+                            icon.classList.remove('fa-chevron-up');
+                            icon.classList.add('fa-chevron-down');
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
