@@ -7,21 +7,279 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
+    <title>CLUQ AI SOLUTIONS - Advanced AI Technology for Real-World Problems</title>
+    <meta name="description" content="CLUQ AI SOLUTIONS develops cutting-edge artificial intelligence solutions for waste management, digital transformation, and community enhancement. Building the future of intelligent automation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="css/responsive.css?v=2.0">
     <!-- Particles.js library for the interactive background -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        html {
-            zoom: 0.9;
+        /* Advanced High-Tech Styling */
+        :root {
+            --tech-primary: #0A0E27;
+            --tech-secondary: #1E293B;
+            --tech-accent: #0EA5E9;
+            --tech-accent-bright: #38BDF8;
+            --tech-success: #10B981;
+            --tech-warning: #F59E0B;
+            --tech-error: #EF4444;
+            --tech-purple: #8B5CF6;
+            
+            --text-primary: #FFFFFF;
+            --text-secondary: #CBD5E1;
+            --text-muted: #64748B;
+            --text-dark: #1E293B;
+            
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.3);
+            --shadow-strong: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
         }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-primary);
+            color: var(--text-secondary);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Enhanced Navbar */
+        .navbar {
+            background: rgba(10, 14, 39, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .brand-name {
+            background: linear-gradient(135deg, var(--tech-accent-bright), var(--tech-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: -0.02em;
+        }
+
+        /* Advanced Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--tech-accent-bright) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--tech-accent) 0%, var(--tech-accent-bright) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-glow);
+            border: 1px solid var(--tech-accent-bright);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 40px rgba(14, 165, 233, 0.4);
+        }
+
+        /* Glassmorphism cards */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--tech-accent-bright);
+            box-shadow: var(--shadow-strong);
+        }
+
+        /* Advanced Animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
             }
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-fade:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .animate-fade:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .animate-fade:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        /* Hover effects for project cards */
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--tech-accent-bright);
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                0 0 40px rgba(14, 165, 233, 0.3);
+        }
+
+        /* Enhanced button hover effects */
+        .cta-button:hover,
+        a[style*="linear-gradient"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                0 0 50px rgba(14, 165, 233, 0.5),
+                0 20px 40px -8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer link hover effects */
+        footer a:hover {
+            color: var(--tech-accent-bright) !important;
+            transform: translateX(3px);
+        }
+
+        /* Technology stack hover effects */
+        [style*="background: var(--glass-bg)"]:hover {
+            background: rgba(14, 165, 233, 0.1) !important;
+            border-color: var(--tech-accent-bright) !important;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 0 1rem;
+            }
+            
+            .glass-card {
+                padding: 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Loading animation for particles */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 1;
         }
     </style>
 </head>
@@ -52,6 +310,7 @@
                         <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
                         <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
                         <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
+                        <a href="projects/citypickups.html" class="dropdown-item">City Pickups</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -67,176 +326,487 @@
     <section class="hero">
         <div id="particles-js" class="hero-background"></div>
         <div class="hero-content">
-            <h1 class="animate-fade">CLUQ AI SOLUTIONS</h1>
-            <p class="animate-fade">Empowering communities through AI innovation</p>
-            <p class="hero-subtitle animate-fade">We build cutting-edge AI solutions that drive sustainability, enhance public services, and foster community building.</p>
-            <a href="contact.html" class="cta-button animate-fade">Get Started</a>
-        </div>
-        <div class="scroll-down-indicator">
-            <span class="scroll-arrow"></span>
-        </div>
-    </section>
-    
-    <section class="company-intro">
-        <h2>Crafting AI Solutions with Purpose</h2>
-        <p>At CLUQ AI SOLUTIONS, we specialize in developing innovative artificial intelligence systems that solve real-world problems. Our technologies empower communities, enhance sustainability initiatives, and transform how public services operate.</p>
-        <p>Based in Berlin, our team of AI specialists, engineers, and designers create custom solutions that make a meaningful difference in how organizations function and communities thrive.</p>
-    </section>
-    
-    <main>
-        <section class="featured-projects reveal-on-scroll">
-            <h2 style="color: #007bff; font-size: 2.2rem; margin-bottom: 2rem; text-align: center;">Our Solutions</h2>
+            <div style="margin-bottom: 1rem;">
+                <span style="background: linear-gradient(135deg, var(--tech-accent), var(--tech-purple)); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600; color: white; text-transform: uppercase; letter-spacing: 0.5px;">Advanced AI Solutions</span>
+            </div>
+            <h1 class="animate-fade">Transforming Tomorrow with Intelligent Technology</h1>
+            <p class="hero-subtitle animate-fade">We engineer cutting-edge artificial intelligence solutions that solve real-world challenges. From autonomous systems to data intelligence, we're building the infrastructure for a smarter future.</p>
+            <p class="hero-tagline animate-fade">Specializing in robotics, machine learning, and enterprise automation for sustainable innovation and digital transformation.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                <a href="#solutions" class="cta-button animate-fade">
+                    <i class="fas fa-rocket"></i>
+                    Explore Our Technology
+                </a>
+                <a href="contact.html" style="padding: 1rem 2rem; background: transparent; color: var(--text-secondary); text-decoration: none; border: 1px solid var(--glass-border); border-radius: 12px; font-weight: 600; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-calendar"></i>
+                    Schedule Consultation
+                </a>
+            </div>
             
-            <div class="portfolio-grid" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Trust Indicators -->
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="color: var(--tech-accent-bright); font-size: 1.5rem; font-weight: 700;">6+</div>
+                    <div style="color: var(--text-muted); font-size: 0.9rem;">Active Projects</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="color: var(--tech-success); font-size: 1.5rem; font-weight: 700;">100%</div>
+                    <div style="color: var(--text-muted); font-size: 0.9rem;">Open Source</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="color: var(--tech-purple); font-size: 1.5rem; font-weight: 700;">2025</div>
+                    <div style="color: var(--text-muted); font-size: 0.9rem;">Founded</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite;">
+            <div style="width: 2px; height: 30px; background: linear-gradient(to bottom, var(--tech-accent-bright), transparent); margin: 0 auto;"></div>
+            <div style="width: 6px; height: 6px; background: var(--tech-accent-bright); border-radius: 50%; margin: 0.5rem auto; opacity: 0.7;"></div>
+        </div>
+    </section>
+    
+    <!-- Mission & Vision Section -->
+    <section style="padding: 5rem 2rem; background: linear-gradient(135deg, var(--tech-secondary) 0%, var(--tech-primary) 100%); position: relative;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <div style="margin-bottom: 2rem;">
+                <span style="color: var(--tech-accent-bright); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Our Mission</span>
+            </div>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--text-primary); margin-bottom: 1.5rem; font-weight: 700; line-height: 1.2;">Engineering AI Solutions for Real-World Impact</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem; line-height: 1.6;">At CLUQ AI Solutions, we don't chase technology trends—we identify genuine problems and engineer practical solutions. Our interdisciplinary team combines advanced AI research with real-world application expertise.</p>
+            
+            <!-- Core Values Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="glass-card">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-bright)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-brain" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 600;">Advanced Intelligence</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Cutting-edge machine learning and AI algorithms designed for enterprise-scale deployment and real-world performance.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--tech-success), #34D399); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-leaf" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 600;">Sustainable Innovation</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Every solution prioritizes environmental impact and long-term sustainability for future generations.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--tech-purple), #A855F7); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-users" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 600;">Community Focus</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Technology that serves people and communities, creating positive social impact through innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technology Stack Section -->
+    <section style="padding: 5rem 2rem; background: var(--tech-primary); position: relative;" id="solutions">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span style="color: var(--tech-accent-bright); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Technology Excellence</span>
+                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--text-primary); margin: 1rem 0; font-weight: 700;">Our Technical Expertise</h2>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.6;">Leveraging state-of-the-art technologies to build intelligent systems that scale and perform in production environments.</p>
+            </div>
+            
+            <!-- Tech Stack Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                <div style="text-align: center; padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s ease;">
+                    <i class="fas fa-robot" style="font-size: 2rem; color: var(--tech-accent-bright); margin-bottom: 1rem;"></i>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Robotics & Automation</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Autonomous systems and intelligent robotics</p>
+                </div>
+                
+                <div style="text-align: center; padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s ease;">
+                    <i class="fas fa-network-wired" style="font-size: 2rem; color: var(--tech-success); margin-bottom: 1rem;"></i>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Machine Learning</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Deep learning and neural networks</p>
+                </div>
+                
+                <div style="text-align: center; padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s ease;">
+                    <i class="fas fa-eye" style="font-size: 2rem; color: var(--tech-purple); margin-bottom: 1rem;"></i>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Computer Vision</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Advanced image processing and recognition</p>
+                </div>
+                
+                <div style="text-align: center; padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s ease;">
+                    <i class="fas fa-cloud" style="font-size: 2rem; color: var(--tech-warning); margin-bottom: 1rem;"></i>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Cloud Infrastructure</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Scalable cloud-native architectures</p>
+                </div>
+                
+                <div style="text-align: center; padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s ease;">
+                    <i class="fas fa-mobile-alt" style="font-size: 2rem; color: var(--tech-error); margin-bottom: 1rem;"></i>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Mobile & IoT</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Connected devices and mobile platforms</p>
+                </div>
+                
+                <div style="text-align: center; padding: 1.5rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s ease;">
+                    <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--tech-accent); margin-bottom: 1rem;"></i>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Security & Privacy</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Enterprise-grade security protocols</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Projects Section -->
+    <section style="padding: 5rem 2rem; background: linear-gradient(135deg, var(--tech-secondary) 0%, var(--tech-primary) 100%); position: relative;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span style="color: var(--tech-accent-bright); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Featured Solutions</span>
+                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--text-primary); margin: 1rem 0; font-weight: 700;">Real Problems, AI Solutions</h2>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.6;">Each project begins with a genuine challenge affecting people's daily lives. Here's how we're engineering intelligent solutions that create meaningful impact.</p>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                 <!-- TreasureBot -->
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
-                    <a href="projects/treasurebot.html" style="text-decoration: none; color: inherit; display: block;">
-                        <img src="assets/Treasurebot.png" alt="TreasureBot" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
-                        <div style="padding: 1.5rem;">
-                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">TreasureBot</h3>
-                            <p style="color: #666; margin-bottom: 1rem;">AI-powered autonomous waste management system</p>
-                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-robot" style="margin-right: 0.3rem;"></i> Robotics
-                                </span>
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> AI
-                                </span>
+                <div class="glass-card" style="position: relative; overflow: hidden; transition: all 0.3s ease;">
+                    <div style="position: absolute; top: 0; right: 0; background: linear-gradient(135deg, var(--tech-warning), #F59E0B); padding: 0.5rem 1rem; border-radius: 0 0 0 12px;">
+                        <span style="color: white; font-size: 0.75rem; font-weight: 600;">🔬 Active Development</span>
+                    </div>
+                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-bright)); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <div style="position: absolute; inset: 0; background: url('assets/Treasurebot.png') center/cover; opacity: 0.8;"></div>
+                        <div style="position: relative; z-index: 2; text-align: center;">
+                            <i class="fas fa-robot" style="font-size: 3rem; color: rgba(255,255,255,0.9); margin-bottom: 0.5rem;"></i>
+                        </div>
+                    </div>
+                    <a href="projects/treasurebot.html" style="text-decoration: none; color: inherit;">
+                        <h3 style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">TreasureBot</h3>
+                        <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); padding: 0.75rem; margin-bottom: 1rem; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <i class="fas fa-exclamation-triangle" style="color: var(--tech-warning); font-size: 0.9rem;"></i>
+                                <span style="color: var(--tech-warning); font-weight: 600; font-size: 0.9rem;">Challenge</span>
                             </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="color: #007bff; font-weight: 500;">View Details</span>
-                                <a href="https://treasurebot.eu/" target="_blank" onclick="event.stopPropagation();" style="width: 32px; height: 32px; background-color: rgba(0, 123, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #007bff;">
-                                    <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
-                                </a>
-                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">Inefficient waste sorting increases operational costs and environmental impact in public spaces.</p>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">Engineering AI-powered autonomous robots for intelligent waste detection, sorting, and collection to optimize municipal operations and reduce environmental footprint.</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                            <span style="background: rgba(14, 165, 233, 0.2); color: var(--tech-accent-bright); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-robot" style="margin-right: 0.3rem;"></i> Robotics
+                            </span>
+                            <span style="background: rgba(139, 92, 246, 0.2); color: var(--tech-purple); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> Computer Vision
+                            </span>
+                            <span style="background: rgba(16, 185, 129, 0.2); color: var(--tech-success); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-leaf" style="margin-right: 0.3rem;"></i> Sustainability
+                            </span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--tech-accent-bright); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                                Explore Solution <i class="fas fa-arrow-right"></i>
+                            </span>
+                            <a href="https://treasurebot.eu/" target="_blank" onclick="event.stopPropagation();" style="width: 40px; height: 40px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--tech-accent-bright); transition: all 0.3s ease;">
+                                <i class="fas fa-external-link-alt" style="font-size: 0.9rem;"></i>
+                            </a>
                         </div>
                     </a>
                 </div>
                 
                 <!-- Fashion AI -->
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
-                    <a href="projects/fashionai.html" style="text-decoration: none; color: inherit; display: block;">
-                        <img src="assets/fassionai.png" alt="Fashion AI" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
-                        <div style="padding: 1.5rem;">
-                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">Fashion AI</h3>
-                            <p style="color: #666; margin-bottom: 1rem;">AI-powered personalized styling platform</p>
-                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-tshirt" style="margin-right: 0.3rem;"></i> Fashion
-                                </span>
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> AI
-                                </span>
+                <div class="glass-card" style="position: relative; overflow: hidden; transition: all 0.3s ease;">
+                    <div style="position: absolute; top: 0; right: 0; background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-bright)); padding: 0.5rem 1rem; border-radius: 0 0 0 12px;">
+                        <span style="color: white; font-size: 0.75rem; font-weight: 600;">🔍 Research Phase</span>
+                    </div>
+                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--tech-purple), #A855F7); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <div style="position: absolute; inset: 0; background: url('assets/fassionai.png') center/cover; opacity: 0.8;"></div>
+                        <div style="position: relative; z-index: 2; text-align: center;">
+                            <i class="fas fa-tshirt" style="font-size: 3rem; color: rgba(255,255,255,0.9); margin-bottom: 0.5rem;"></i>
+                        </div>
+                    </div>
+                    <a href="projects/fashionai.html" style="text-decoration: none; color: inherit;">
+                        <h3 style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">Fashion AI</h3>
+                        <div style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.75rem; margin-bottom: 1rem; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <i class="fas fa-question-circle" style="color: var(--tech-accent-bright); font-size: 0.9rem;"></i>
+                                <span style="color: var(--tech-accent-bright); font-weight: 600; font-size: 0.9rem;">Challenge</span>
                             </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="color: #007bff; font-weight: 500;">View Details</span>
-                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">People struggle with styling decisions, leading to poor purchases and fashion waste.</p>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">Researching AI-driven personalized styling platforms to reduce fashion waste through intelligent recommendations and virtual try-on technologies.</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                            <span style="background: rgba(139, 92, 246, 0.2); color: var(--tech-purple); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-brain" style="margin-right: 0.3rem;"></i> Machine Learning
+                            </span>
+                            <span style="background: rgba(14, 165, 233, 0.2); color: var(--tech-accent-bright); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-mobile-alt" style="margin-right: 0.3rem;"></i> Mobile App
+                            </span>
+                            <span style="background: rgba(16, 185, 129, 0.2); color: var(--tech-success); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-recycle" style="margin-right: 0.3rem;"></i> Sustainability
+                            </span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--tech-accent-bright); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                                Explore Research <i class="fas fa-arrow-right"></i>
+                            </span>
                         </div>
                     </a>
                 </div>
                 
                 <!-- Global Pickups -->
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); background-color: #fff; transition: transform 0.3s, box-shadow 0.3s;">
-                    <a href="projects/globalpickups.html" style="text-decoration: none; color: inherit; display: block;">
-                        <img src="assets/globalpickups.png" alt="Global Pickups" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #eee;">
-                        <div style="padding: 1.5rem;">
-                            <h3 style="font-size: 1.5rem; color: #333; margin-top: 0; margin-bottom: 0.5rem;">Global Pickups</h3>
-                            <p style="color: #666; margin-bottom: 1rem;">Peer-to-peer delivery platform</p>
-                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-truck" style="margin-right: 0.3rem;"></i> Delivery
-                                </span>
-                                <span style="background-color: rgba(0, 123, 255, 0.1); color: #007bff; border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
-                                    <i class="fas fa-users" style="margin-right: 0.3rem;"></i> P2P
-                                </span>
+                <div class="glass-card" style="position: relative; overflow: hidden; transition: all 0.3s ease;">
+                    <div style="position: absolute; top: 0; right: 0; background: linear-gradient(135deg, var(--tech-success), #34D399); padding: 0.5rem 1rem; border-radius: 0 0 0 12px;">
+                        <span style="color: white; font-size: 0.75rem; font-weight: 600;">💡 Concept Phase</span>
+                    </div>
+                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--tech-success), #34D399); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <div style="position: absolute; inset: 0; background: url('assets/globalpickups.png') center/cover; opacity: 0.8;"></div>
+                        <div style="position: relative; z-index: 2; text-align: center;">
+                            <i class="fas fa-truck" style="font-size: 3rem; color: rgba(255,255,255,0.9); margin-bottom: 0.5rem;"></i>
+                        </div>
+                    </div>
+                    <a href="projects/globalpickups.html" style="text-decoration: none; color: inherit;">
+                        <h3 style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">Global Pickups</h3>
+                        <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); padding: 0.75rem; margin-bottom: 1rem; border-radius: 8px;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <i class="fas fa-shipping-fast" style="color: var(--tech-success); font-size: 0.9rem;"></i>
+                                <span style="color: var(--tech-success); font-weight: 600; font-size: 0.9rem;">Challenge</span>
                             </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <span style="color: #007bff; font-weight: 500;">View Details</span>
-                                <a href="https://globalpickups.com/" target="_blank" onclick="event.stopPropagation();" style="width: 32px; height: 32px; background-color: rgba(0, 123, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #007bff;">
-                                    <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
-                                </a>
-                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">Expensive delivery costs and environmental impact from traditional logistics networks.</p>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">Conceptualizing peer-to-peer delivery networks powered by community connections to reduce costs and carbon footprint through intelligent routing.</p>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                            <span style="background: rgba(14, 165, 233, 0.2); color: var(--tech-accent-bright); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-route" style="margin-right: 0.3rem;"></i> Smart Routing
+                            </span>
+                            <span style="background: rgba(139, 92, 246, 0.2); color: var(--tech-purple); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-users" style="margin-right: 0.3rem;"></i> P2P Network
+                            </span>
+                            <span style="background: rgba(16, 185, 129, 0.2); color: var(--tech-success); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                                <i class="fas fa-leaf" style="margin-right: 0.3rem;"></i> Eco-Friendly
+                            </span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--tech-accent-bright); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                                Explore Concept <i class="fas fa-arrow-right"></i>
+                            </span>
+                            <a href="https://globalpickups.com/" target="_blank" onclick="event.stopPropagation();" style="width: 40px; height: 40px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--tech-accent-bright); transition: all 0.3s ease;">
+                                <i class="fas fa-external-link-alt" style="font-size: 0.9rem;"></i>
+                            </a>
                         </div>
                     </a>
                 </div>
             </div>
             
-            <div class="text-center" style="margin-top: 40px; text-align: center;">
-                <a href="portfolio.html" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 25px; font-size: 1rem; text-decoration: none; border-radius: 30px; transition: all 0.3s ease;">
-                    View All Projects <i class="fas fa-arrow-right"></i>
+            <!-- View All Projects CTA -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="portfolio.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: linear-gradient(135deg, var(--tech-accent) 0%, var(--tech-accent-bright) 100%); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: var(--shadow-glow); border: 1px solid var(--tech-accent-bright);">
+                    <i class="fas fa-layer-group"></i>
+                    Explore All Solutions
+                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-        </section>
-        
-        <!-- Our Approach Section with compact layout -->
-        <section class="compact-approach" style="background-color: #f8f9fa; padding: 60px 0;">
-            <div class="container">
-                <h2 style="color: #007bff; font-size: 2rem; margin-bottom: 3rem; text-align: center;">Our Approach</h2>
+        </div>
+    </section>
+    
+    <main>
+        <!-- Our Approach Section -->
+        <section style="padding: 5rem 2rem; background: var(--tech-primary); position: relative;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <span style="color: var(--tech-accent-bright); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Our Methodology</span>
+                    <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--text-primary); margin: 1rem 0; font-weight: 700;">Engineering Excellence Process</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.6;">Our systematic approach ensures every AI solution is built with precision, tested rigorously, and deployed for maximum impact.</p>
+                </div>
                 
-                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 30px;">
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-lightbulb" style="color: white; font-size: 28px;"></i>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div class="glass-card" style="text-align: center;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-bright)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                            <i class="fas fa-search" style="color: white; font-size: 2rem;"></i>
+                            <div style="position: absolute; top: -8px; right: -8px; width: 24px; height: 24px; background: var(--tech-success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: white; font-weight: 700;">1</div>
                         </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Understand</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">We begin by deeply understanding your challenges, goals, and processes.</p>
+                        <h3 style="color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; font-weight: 600;">Research & Discovery</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">Deep dive into problem spaces, stakeholder needs, and technical feasibility to ensure we're solving the right challenges.</p>
                     </div>
                     
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-chart-line" style="color: white; font-size: 28px;"></i>
+                    <div class="glass-card" style="text-align: center;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--tech-purple), #A855F7); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                            <i class="fas fa-chart-line" style="color: white; font-size: 2rem;"></i>
+                            <div style="position: absolute; top: -8px; right: -8px; width: 24px; height: 24px; background: var(--tech-success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: white; font-weight: 700;">2</div>
                         </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Analyze</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">Our experts analyze data, identify patterns, and determine optimal AI approaches.</p>
+                        <h3 style="color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; font-weight: 600;">Data Analysis & Modeling</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">Advanced analytics and machine learning model development with rigorous testing and validation protocols.</p>
                     </div>
                     
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-cogs" style="color: white; font-size: 28px;"></i>
+                    <div class="glass-card" style="text-align: center;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--tech-success), #34D399); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                            <i class="fas fa-code" style="color: white; font-size: 2rem;"></i>
+                            <div style="position: absolute; top: -8px; right: -8px; width: 24px; height: 24px; background: var(--tech-success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: white; font-weight: 700;">3</div>
                         </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Develop</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">We custom-build AI solutions tailored to your specific needs and objectives.</p>
+                        <h3 style="color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; font-weight: 600;">Development & Integration</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">Agile development with continuous integration, automated testing, and scalable architecture design.</p>
                     </div>
                     
-                    <div class="approach-item" style="text-align: center; flex: 1; min-width: 200px; max-width: 270px;">
-                        <div style="width: 80px; height: 80px; background-color: #0062cc; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                            <i class="fas fa-rocket" style="color: white; font-size: 28px;"></i>
+                    <div class="glass-card" style="text-align: center;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--tech-warning), #F59E0B); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; position: relative;">
+                            <i class="fas fa-rocket" style="color: white; font-size: 2rem;"></i>
+                            <div style="position: absolute; top: -8px; right: -8px; width: 24px; height: 24px; background: var(--tech-success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: white; font-weight: 700;">4</div>
                         </div>
-                        <h3 style="color: #333; font-size: 1.4rem; margin-bottom: 10px;">Implement</h3>
-                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">Our team ensures smooth implementation with training and support.</p>
+                        <h3 style="color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; font-weight: 600;">Deployment & Optimization</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">Production deployment with monitoring, performance optimization, and continuous improvement cycles.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to transform your business with AI?</h2>
-            <p>Contact us today to discuss how we can help you leverage innovative AI solutions for sustainable growth.</p>
-            <a href="contact.html" class="cta-button">
-                Get in Touch →
-            </a>
+    <!-- Call to Action Section -->
+    <section style="padding: 5rem 2rem; background: linear-gradient(135deg, var(--tech-secondary) 0%, var(--tech-primary) 100%); position: relative;">
+        <div style="position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 70%); pointer-events: none;"></div>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; position: relative; z-index: 2;">
+            <div style="margin-bottom: 2rem;">
+                <span style="background: linear-gradient(135deg, var(--tech-accent), var(--tech-purple)); padding: 0.5rem 1.5rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600; color: white; text-transform: uppercase; letter-spacing: 0.5px;">Ready to Innovate?</span>
+            </div>
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--text-primary); margin-bottom: 1.5rem; font-weight: 700; line-height: 1.2;">Transform Your Vision into Intelligent Reality</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 3rem; line-height: 1.6;">Join us in pioneering the next generation of AI solutions. Whether you're looking to solve complex challenges or explore emerging opportunities, we're here to engineer the future together.</p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1.2rem 2.5rem; background: linear-gradient(135deg, var(--tech-accent) 0%, var(--tech-accent-bright) 100%); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: var(--shadow-glow); border: 1px solid var(--tech-accent-bright);">
+                    <i class="fas fa-rocket"></i>
+                    Start Your AI Journey
+                </a>
+                <a href="portfolio.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1.2rem 2.5rem; background: var(--glass-bg); color: var(--text-secondary); text-decoration: none; border: 1px solid var(--glass-border); border-radius: 12px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; backdrop-filter: blur(20px);">
+                    <i class="fas fa-layer-group"></i>
+                    Explore Solutions
+                </a>
+            </div>
+            
+            <!-- Contact Info -->
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Ready to discuss your project?</p>
+                <a href="mailto:team@cluq.eu" style="color: var(--tech-accent-bright); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-envelope"></i>
+                    team@cluq.eu
+                </a>
+            </div>
         </div>
     </section>
     
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+    <!-- Enhanced Footer -->
+    <footer style="background: var(--tech-primary); border-top: 1px solid var(--glass-border); position: relative;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--tech-accent-bright), transparent);"></div>
+        
+        <div style="max-width: 1200px; margin: 0 auto; padding: 3rem 2rem 1rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- Company Info -->
+                <div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--text-primary); font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">
+                            <span style="background: linear-gradient(135deg, var(--tech-accent-bright), var(--tech-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">CLUQ AI</span> SOLUTIONS
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Engineering intelligent solutions for tomorrow's challenges. Building the future of AI-driven automation and sustainable innovation.</p>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <a href="mailto:team@cluq.eu" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.75rem; transition: color 0.3s ease;">
+                            <div style="width: 32px; height: 32px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-envelope" style="color: var(--tech-accent-bright); font-size: 0.9rem;"></i>
+                            </div>
+                            team@cluq.eu
+                        </a>
+                        <div style="color: var(--text-secondary); display: flex; align-items: center; gap: 0.75rem;">
+                            <div style="width: 32px; height: 32px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-calendar" style="color: var(--tech-success); font-size: 0.9rem;"></i>
+                            </div>
+                            Founded 2025
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 style="color: var(--text-primary); font-weight: 600; margin-bottom: 1.5rem; font-size: 1.1rem;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <a href="about.html" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.7rem; color: var(--tech-accent);"></i>
+                            About Us
+                        </a>
+                        <a href="portfolio.html" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.7rem; color: var(--tech-accent);"></i>
+                            Our Solutions
+                        </a>
+                        <a href="faq.html" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.7rem; color: var(--tech-accent);"></i>
+                            FAQ
+                        </a>
+                        <a href="contact.html" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.7rem; color: var(--tech-accent);"></i>
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Legal & Compliance -->
+                <div>
+                    <h4 style="color: var(--text-primary); font-weight: 600; margin-bottom: 1.5rem; font-size: 1.1rem;">Legal & Compliance</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <a href="agb.html" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-file-contract" style="font-size: 0.8rem; color: var(--tech-purple);"></i>
+                            Terms & Conditions
+                        </a>
+                        <a href="impressum.html" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-info-circle" style="font-size: 0.8rem; color: var(--tech-purple);"></i>
+                            Impressum
+                        </a>
+                        <div style="color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                            <i class="fas fa-shield-alt" style="color: var(--tech-success);"></i>
+                            GDPR Compliant
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technology Focus -->
+                <div>
+                    <h4 style="color: var(--text-primary); font-weight: 600; margin-bottom: 1.5rem; font-size: 1.1rem;">Technology Focus</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <span style="background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-secondary); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                            <i class="fas fa-robot" style="margin-right: 0.3rem; color: var(--tech-accent);"></i> Robotics
+                        </span>
+                        <span style="background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-secondary); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                            <i class="fas fa-brain" style="margin-right: 0.3rem; color: var(--tech-purple);"></i> Machine Learning
+                        </span>
+                        <span style="background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-secondary); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                            <i class="fas fa-eye" style="margin-right: 0.3rem; color: var(--tech-success);"></i> Computer Vision
+                        </span>
+                        <span style="background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-secondary); border-radius: 20px; padding: 0.3rem 0.8rem; font-size: 0.8rem; display: inline-flex; align-items: center;">
+                            <i class="fas fa-cloud" style="margin-right: 0.3rem; color: var(--tech-warning);"></i> Cloud AI
+                        </span>
+                    </div>
+                    
+                    <!-- Mission Statement -->
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 8px;">
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; font-style: italic;">
+                            "Building intelligent systems that solve real problems and create sustainable value for communities worldwide."
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+            
+            <!-- Copyright Section -->
+            <div style="padding-top: 2rem; border-top: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <div style="color: var(--text-muted); font-size: 0.9rem;">
+                    <p style="margin: 0;">&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
+                    <p style="margin: 0.25rem 0 0; font-size: 0.8rem;">Engineered with precision in Germany</p>
+                </div>
+                
+                <!-- Status Indicators -->
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.8rem;">
+                        <div style="width: 8px; height: 8px; background: var(--tech-success); border-radius: 50%; animation: pulse 2s infinite;"></div>
+                        Open Source
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.8rem;">
+                        <div style="width: 8px; height: 8px; background: var(--tech-accent-bright); border-radius: 50%; animation: pulse 2s infinite;"></div>
+                        Active Development
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
         </div>
     </footer>
 

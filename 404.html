@@ -2,63 +2,457 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
     <title>Page Not Found - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Particles.js library for the interactive background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
     <style>
+        :root {
+            /* 404 page color scheme - dramatic red/blue with warning accents */
+            --tech-primary: #dc2626;
+            --tech-secondary: #1e40af;
+            --tech-accent: #fbbf24;
+            --tech-background: #0f172a;
+            --tech-surface: #1e293b;
+            --tech-card: rgba(220, 38, 38, 0.1);
+            --tech-border: rgba(59, 130, 246, 0.3);
+            --tech-text-primary: #f8fafc;
+            --tech-text-secondary: #cbd5e1;
+            --tech-text-muted: #94a3b8;
+            --tech-gradient: linear-gradient(135deg, #dc2626 0%, #1e40af 50%, #fbbf24 100%);
+            --tech-shadow: rgba(220, 38, 38, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--tech-background);
+            color: var(--tech-text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Particles.js container */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            backdrop-filter: blur(20px);
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid var(--tech-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Error Container */
         .error-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 100px 20px;
+            padding: 2rem;
             max-width: 800px;
             margin: 0 auto;
+            position: relative;
+            z-index: 2;
         }
+
+        .error-visual {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
         .error-code {
-            font-size: 120px;
-            color: #007bff;
-            margin: 0;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(4rem, 15vw, 8rem);
+            font-weight: 700;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             line-height: 1;
+            margin: 0;
+            text-shadow: 0 0 50px rgba(220, 38, 38, 0.5);
         }
-        .error-message {
-            font-size: 24px;
-            margin: 20px 0;
+
+        .error-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: var(--tech-primary);
+            opacity: 0.3;
+            animation: pulse 2s infinite;
         }
-        .home-link {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 25px;
-            background: #007bff;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.1); }
+        }
+
+        .error-content {
+            background: var(--tech-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--tech-border);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            box-shadow: 0 8px 32px var(--tech-shadow);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .error-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
             font-weight: 600;
-            transition: background 0.3s ease;
+            color: var(--tech-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
         }
+
+        .error-message {
+            font-size: 1.125rem;
+            color: var(--tech-text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .error-description {
+            color: var(--tech-text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .error-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3);
+        }
+
         .home-link:hover {
-            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(220, 38, 38, 0.4);
+            background: linear-gradient(135deg, var(--tech-secondary) 0%, var(--tech-primary) 100%);
+        }
+
+        .back-link {
+            color: var(--tech-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-link:hover {
+            color: var(--tech-text-primary);
+            transform: translateX(-4px);
+        }
+
+        .suggestions {
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .suggestions h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--tech-secondary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .suggestions li {
+            padding: 0.5rem 0;
+            color: var(--tech-text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .suggestions li::before {
+            content: '→';
+            color: var(--tech-accent);
+            font-weight: bold;
+        }
+
+        .suggestions a {
+            color: var(--tech-accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .suggestions a:hover {
+            color: var(--tech-text-primary);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--tech-border);
+            padding: 1rem 2rem;
+            text-align: center;
+            color: var(--tech-text-muted);
+            margin-top: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem;
+            }
+
+            .error-container {
+                padding: 1rem;
+            }
+
+            .error-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .home-link {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .suggestions {
+                text-align: center;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-content {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        .error-code:hover {
+            animation: glitch 0.3s ease-in-out;
         }
     </style>
 </head>
-<body>
+<<body>
+    <!-- Particles.js container -->
+    <div id="particles-js"></div>
+
     <header>
-        <div class="navbar">
+        <nav class="navbar">
             <a href="index.html" class="navbar-brand">
                 <span class="brand-name">CLUQ AI</span>
             </a>
-        </div>
+            
+            <button class="hamburger" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="projects/treasurebot.html" class="dropdown-item">TreasureBot</a>
+                        <a href="projects/fashionai.html" class="dropdown-item">Fashion AI</a>
+                        <a href="projects/maximizecv.html" class="dropdown-item">Maximize CV</a>
+                        <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
+                        <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
+                        <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
+                        <a href="projects/citypickups.html" class="dropdown-item">City Pickups</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <div class="error-container">
-        <h1 class="error-code">404</h1>
-        <h2 class="error-message">Page Not Found</h2>
-        <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
-        <a href="index.html" class="home-link">Back to Homepage</a>
+        <div class="error-visual">
+            <h1 class="error-code">404</h1>
+            <i class="fas fa-exclamation-triangle error-icon"></i>
+        </div>
+        
+        <div class="error-content">
+            <h2 class="error-title">
+                <i class="fas fa-search"></i>
+                Seite nicht gefunden
+            </h2>
+            <p class="error-message">
+                Die angeforderte Seite konnte nicht gefunden werden. Möglicherweise wurde sie verschoben, umbenannt oder ist vorübergehend nicht verfügbar.
+            </p>
+            <p class="error-description">
+                Keine Sorge! Unsere KI-Systeme arbeiten kontinuierlich daran, Ihnen die bestmögliche Erfahrung zu bieten.
+            </p>
+            
+            <div class="error-actions">
+                <a href="index.html" class="home-link">
+                    <i class="fas fa-home"></i>
+                    Zurück zur Startseite
+                </a>
+                <a href="javascript:history.back()" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Zurück zur vorherigen Seite
+                </a>
+            </div>
+            
+            <div class="suggestions">
+                <h3><i class="fas fa-lightbulb"></i> Vorschläge:</h3>
+                <ul>
+                    <li><a href="index.html">Startseite besuchen</a></li>
+                    <li><a href="portfolio.html">Unsere Projekte entdecken</a></li>
+                    <li><a href="about.html">Mehr über CLUQ AI erfahren</a></li>
+                    <li><a href="contact.html">Kontakt aufnehmen</a></li>
+                    <li><a href="faq.html">Häufige Fragen ansehen</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     
     <footer>
-        <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 CLUQ AI SOLUTIONS. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script>
+        // Particles.js configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: 800 } },
+                color: { value: ["#dc2626", "#1e40af", "#fbbf24"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.6, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1 } },
+                size: { value: 3, random: true, anim: { enable: true, speed: 4, size_min: 0.3 } },
+                line_linked: { enable: true, distance: 150, color: "#dc2626", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out", bounce: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });
+
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Random error code animation
+            const errorCode = document.querySelector('.error-code');
+            setInterval(() => {
+                if (Math.random() < 0.1) { // 10% chance every second
+                    errorCode.style.animation = 'none';
+                    setTimeout(() => {
+                        errorCode.style.animation = 'glitch 0.3s ease-in-out';
+                    }, 50);
+                }
+            }, 1000);
+        });
+        
+    </script>
+    
+    <!-- Main JavaScript for interactive functionality -->
+    <script src="js/main.js"></script>
 </body>
 </html>

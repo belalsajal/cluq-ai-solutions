@@ -2,102 +2,804 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-lets    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
     <!-- Cache-busting meta tags -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Contact Us - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
+    <title>Contact Us - CLUQ AI SOLUTIONS | Get in Touch</title>
+    <meta name="description" content="Contact CLUQ AI SOLUTIONS to discuss AI solutions for your challenges. Reach out to our team for consultations, partnerships, and project inquiries.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="css/responsive.css?v=2.0">
     <!-- Particles.js library for the interactive background -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Advanced High-Tech Styling */
+        :root {
+            --tech-primary: #0A0E27;
+            --tech-secondary: #1E293B;
+            --tech-accent: #0EA5E9;
+            --tech-accent-bright: #38BDF8;
+            --tech-success: #10B981;
+            --tech-warning: #F59E0B;
+            --tech-error: #EF4444;
+            --tech-purple: #8B5CF6;
+            
+            --text-primary: #FFFFFF;
+            --text-secondary: #CBD5E1;
+            --text-muted: #64748B;
+            --text-dark: #1E293B;
+            
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.3);
+            --shadow-strong: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+        }
+
         html {
-            zoom: 0.9;
+            scroll-behavior: smooth;
         }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
-            }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-primary);
+            color: var(--text-secondary);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
         }
-        
+
+        /* Enhanced Navbar */
+        .navbar {
+            background: rgba(10, 14, 39, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .brand-name {
+            background: linear-gradient(135deg, var(--tech-accent-bright), var(--tech-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: -0.02em;
+        }
+
+        /* Page Hero Section */
+        .page-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 100%);
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--tech-accent-bright) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .page-hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Glassmorphism cards */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--tech-accent-bright);
+            box-shadow: var(--shadow-strong);
+        }
+
+        /* Form Styling */
         .contact-form {
             max-width: 800px;
             margin: 0 auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
         
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
             font-weight: 600;
-            color: #333;
+            color: var(--text-primary);
+            font-size: 0.95rem;
         }
         
         .form-control {
             width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-            transition: border-color 0.3s;
+            padding: 1rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
         }
-        
+
         .form-control:focus {
-            border-color: #007bff;
             outline: none;
+            border-color: var(--tech-accent-bright);
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+            background: rgba(255, 255, 255, 0.08);
         }
-        
+
+        .form-control::placeholder {
+            color: var(--text-muted);
+        }
+
         textarea.form-control {
-            min-height: 150px;
+            min-height: 120px;
+            resize: vertical;
         }
-        
-        .contact-info {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        
-        .contact-info h2 {
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-        
-        .contact-method {
+
+        .submit-button {
             display: inline-flex;
             align-items: center;
-            margin: 0 15px;
-            color: #333;
-        }
-        
-        .contact-method i {
-            font-size: 20px;
-            margin-right: 8px;
-            color: #007bff;
-        }
-        
-        .submit-btn {
-            background: #007bff;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--tech-accent) 0%, var(--tech-accent-bright) 100%);
             color: white;
+            text-decoration: none;
             border: none;
-            padding: 12px 25px;
-            border-radius: 4px;
-            font-size: 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-glow);
             cursor: pointer;
-            transition: background 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 40px rgba(14, 165, 233, 0.4);
+        }
+
+        /* Contact info cards */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .contact-item {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--tech-accent-bright);
+            box-shadow: var(--shadow-strong);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* Content sections */
+        main {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--tech-primary);
+            border-top: 1px solid var(--glass-border);
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-info h3 {
+            color: var(--text-primary);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-info p {
+            color: var(--text-secondary);
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--tech-accent-bright);
+            transform: translateX(3px);
+        }
+
+        .footer-copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-muted);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-fade:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 0 1rem;
+            }
+            
+            .glass-card {
+                padding: 1.5rem;
+            }
+            
+            main {
+                padding: 3rem 1rem;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Contact page specific styles */
+        .contact-info-section, .contact-form-section, .additional-contact {
+            margin-bottom: 3rem;
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .contact-card .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--tech-accent) 0%, var(--tech-accent-bright) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .contact-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--tech-accent-bright);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--text-primary);
+            transform: translateX(5px);
+        }
+
+        .contact-note {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .form-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .form-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-submit {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .form-note {
+            margin-top: 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Select field styling */
+        .select-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
         }
         
-        .submit-btn:hover {
-            background: #0056b3;
+        select.form-control {
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: none; /* Remove default arrow */
+            transition: all 0.3s ease;
+            padding-right: 3rem;
+            width: 100%;
+            color: var(--text-primary);
+            position: relative;
+            z-index: 1; /* Make sure the select is above the custom icon */
+            background: linear-gradient(to bottom, 
+                        rgba(255, 255, 255, 0.05) 0%, 
+                        rgba(30, 41, 59, 0.6) 100%);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .select-icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 3rem;
+            pointer-events: none;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, 
+                       rgba(14, 165, 233, 0.2) 0%, 
+                       rgba(139, 92, 246, 0.2) 100%);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .select-icon:after {
+            content: '';
+            width: 0.8rem;
+            height: 0.8rem;
+            border-right: 2px solid var(--tech-accent);
+            border-bottom: 2px solid var(--tech-accent);
+            transform: rotate(45deg) translateY(-25%);
+            display: block;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 0 3px rgba(14, 165, 233, 0.5));
+            background: linear-gradient(135deg, transparent 45%, var(--tech-accent-bright) 100%);
+            border-radius: 0 0 2px 0;
+        }
+        
+        .select-wrapper:hover .select-icon {
+            background: linear-gradient(135deg, 
+                       rgba(14, 165, 233, 0.3) 0%, 
+                       rgba(139, 92, 246, 0.3) 100%);
+        }
+        
+        .select-wrapper:hover .select-icon:after {
+            border-color: var(--tech-accent-bright);
+            transform: rotate(45deg) translateY(-15%);
+        }
+        
+        select.form-control:hover {
+            border-color: var(--tech-accent);
+            box-shadow: 0 0 12px rgba(14, 165, 233, 0.3), 
+                        inset 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to bottom, 
+                        rgba(255, 255, 255, 0.08) 0%, 
+                        rgba(30, 41, 59, 0.7) 100%);
+        }
+        
+        select.form-control:focus {
+            outline: none;
+            border-color: var(--tech-accent-bright);
+            box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.3),
+                        inset 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to bottom, 
+                        rgba(255, 255, 255, 0.1) 0%, 
+                        rgba(30, 41, 59, 0.8) 100%);
+        }
+        
+        select.form-control:focus + .select-icon {
+            background: linear-gradient(135deg, 
+                       rgba(14, 165, 233, 0.4) 0%, 
+                       rgba(139, 92, 246, 0.4) 100%);
+        }
+        
+        select.form-control:focus + .select-icon:after {
+            border-color: var(--tech-accent-bright);
+            transform: rotate(45deg) translateY(-15%);
+            filter: drop-shadow(0 0 5px rgba(14, 165, 233, 0.7));
+        }
+        
+        /* Custom styling for select options */
+        select.form-control option {
+            background-color: var(--tech-secondary);
+            color: var(--text-primary);
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-weight: 400;
+        }
+        
+        /* Add a subtle pulse animation for empty selections */
+        select.form-control:invalid {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.2); }
+            70% { box-shadow: 0 0 0 5px rgba(14, 165, 233, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+        }
+        
+        /* Style for the option placeholder */
+        select.form-control option:first-child {
+            font-style: italic;
+            color: var(--text-muted);
+        }
+        
+        select.form-control option:hover,
+        select.form-control option:focus,
+        select.form-control option:checked {
+            background-color: var(--tech-accent);
+            color: white;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Enhanced tooltip for select wrappers */
+        .select-wrapper[data-tooltip] {
+            position: relative;
+        }
+        
+        .select-wrapper[data-tooltip]::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--tech-secondary);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            width: max-content;
+            max-width: 250px;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--glass-border);
+            pointer-events: none;
+        }
+        
+        .select-wrapper[data-tooltip]::before {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid var(--tech-secondary);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        .select-wrapper:hover[data-tooltip]::after,
+        .select-wrapper:hover[data-tooltip]::before,
+        .select-wrapper:focus-within[data-tooltip]::after,
+        .select-wrapper:focus-within[data-tooltip]::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Enhanced focus and active states with animation */
+        select.form-control:active + .select-icon {
+            transform: scale(0.95);
+        }
+        
+        .select-wrapper:focus-within .select-icon {
+            animation: glow 1.5s infinite alternate;
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(14, 165, 233, 0.3) inset; }
+            100% { box-shadow: 0 0 15px rgba(14, 165, 233, 0.5) inset; }
+        }
+
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-option {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .contact-option:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--tech-accent-bright);
+        }
+
+        .option-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--tech-purple) 0%, var(--tech-accent) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .option-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .option-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .option-link {
+            color: var(--tech-accent-bright);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .option-link:hover {
+            color: var(--text-primary);
+        }
+
+        .additional-contact h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Particles background */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 1;
+        }
+        
+        /* Enhanced Form Styles */
+        .form-control.has-value {
+            border-color: var(--tech-success);
+            background: rgba(30, 41, 59, 0.9);
+        }
+        
+        .form-control.invalid {
+            border-color: var(--tech-error);
+            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        
+        .shake {
+            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        }
+        
+        /* Select wrapper focus state */
+        .select-wrapper.focused {
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+            border-radius: 8px;
+        }
+        
+        /* Ripple effect */
+        .select-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .ripple {
+            position: absolute;
+            background: rgba(14, 165, 233, 0.3);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.6;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.6s, opacity 0.6s;
+            z-index: 0;
+        }
+        
+        /* Form message styles */
+        .form-message {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease;
+        }
+        
+        .form-message.success {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.2) 100%);
+            border: 1px solid var(--tech-success);
+            color: var(--tech-success);
+        }
+        
+        .form-message.error {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.2) 100%);
+            border: 1px solid var(--tech-error);
+            color: var(--tech-error);
         }
     </style>
 </head>
@@ -128,6 +830,7 @@ lets    <meta name="viewport" content="width=device-width, initial-scale=0.9, sh
                         <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
                         <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
                         <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
+                        <a href="projects/citypickups.html" class="dropdown-item">City Pickups</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -149,49 +852,146 @@ lets    <meta name="viewport" content="width=device-width, initial-scale=0.9, sh
     </section>
 
     <main>
-        <div class="container">
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <span>team@cluq.eu</span>
+        <!-- Contact Information Cards -->
+        <section class="contact-info-section">
+            <div class="glass-card">
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>team@cluq.eu</p>
+                        <a href="mailto:team@cluq.eu" class="contact-link">
+                            Send Email <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <div class="contact-method">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Berlin, Germany</span>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Berlin, Germany</p>
+                        <span class="contact-note">European Union</span>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Response Time</h3>
+                        <p>Within 24 hours</p>
+                        <span class="contact-note">Business days</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="contact-form">
-                <form id="contactForm" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="glass-card">
+                <div class="form-header">
+                    <h2>Start Your AI Journey</h2>
+                    <p>Tell us about your project and let's discuss how CLUQ AI can help transform your business.</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required autocomplete="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="john@company.com" required autocomplete="email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" class="form-control" placeholder="Your Company Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <div class="select-wrapper" data-tooltip="Select your estimated budget range">
+                                <select id="budget" name="budget" class="form-control">
+                                    <option value="" selected disabled>Select Budget Range</option>
+                                    <option value="under-10k">Under €10,000</option>
+                                    <option value="10k-25k">€10,000 - €25,000</option>
+                                    <option value="25k-50k">€25,000 - €50,000</option>
+                                    <option value="50k-100k">€50,000 - €100,000</option>
+                                    <option value="over-100k">Over €100,000</option>
+                                </select>
+                                <div class="select-icon"></div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="project-type">Project Type</label>
+                        <div class="select-wrapper" data-tooltip="Select the category that best describes your project">
+                            <select id="project-type" name="project-type" class="form-control">
+                                <option value="" selected disabled>Select Project Type</option>
+                                <option value="ai-consulting">AI Strategy & Consulting</option>
+                                <option value="machine-learning">Machine Learning Solutions</option>
+                                <option value="data-analytics">Data Analytics & Insights</option>
+                                <option value="automation">Process Automation</option>
+                                <option value="custom-ai">Custom AI Development</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="select-icon"></div>
+                        </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="company">Company (Optional)</label>
-                        <input type="text" id="company" name="company" class="form-control">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project goals, challenges, and how AI can help your business..." required></textarea>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" class="form-control" required></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <button type="submit" class="submit-btn">Send Message</button>
+                    <div class="form-group form-submit">
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        <p class="form-note">We'll respond within 24 hours with a detailed project assessment.</p>
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
+
+        <!-- Additional Contact Options -->
+        <section class="additional-contact">
+            <div class="glass-card">
+                <h2>Other Ways to Connect</h2>
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <div class="option-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="option-content">
+                            <h3>Schedule a Consultation</h3>
+                            <p>Book a free 30-minute strategy session to discuss your AI needs.</p>
+                            <a href="#" class="option-link">Schedule Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <div class="option-icon">
+                            <i class="fas fa-file-download"></i>
+                        </div>
+                        <div class="option-content">
+                            <h3>Download Our AI Guide</h3>
+                            <p>Get our comprehensive guide to implementing AI in your business.</p>
+                            <a href="#" class="option-link">Download Guide</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>

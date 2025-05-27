@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
@@ -8,26 +8,382 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>AGB - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
-    <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Particles.js library for the interactive background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
     <style>
-        html {
-            zoom: 0.9;
+        :root {
+            /* Legal page color scheme - sophisticated blue/gray with gold accents */
+            --tech-primary: #1e40af;
+            --tech-secondary: #3b82f6;
+            --tech-accent: #f59e0b;
+            --tech-background: #0f172a;
+            --tech-surface: #1e293b;
+            --tech-card: rgba(30, 64, 175, 0.1);
+            --tech-border: rgba(59, 130, 246, 0.3);
+            --tech-text-primary: #f8fafc;
+            --tech-text-secondary: #cbd5e1;
+            --tech-text-muted: #94a3b8;
+            --tech-gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #f59e0b 100%);
+            --tech-shadow: rgba(30, 64, 175, 0.3);
         }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--tech-background);
+            color: var(--tech-text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Particles.js container */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            backdrop-filter: blur(20px);
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid var(--tech-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--tech-text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            color: var(--tech-text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-link:hover {
+            color: var(--tech-primary);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--tech-border);
+            border-radius: 8px;
+            padding: 0.5rem 0;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--tech-text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background: var(--tech-card);
+            color: var(--tech-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(ellipse at center, rgba(30, 64, 175, 0.15) 0%, transparent 70%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--tech-text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        /* Main Content */
+        main {
+            padding: 6rem 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .legal-section {
+            background: var(--tech-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--tech-border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px var(--tech-shadow);
+            transition: all 0.3s ease;
+        }
+
+        .legal-section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 48px var(--tech-shadow);
+        }
+
+        .legal-section h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--tech-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .legal-section h2::before {
+            content: '';
+            width: 4px;
+            height: 1.5rem;
+            background: var(--tech-gradient);
+            border-radius: 2px;
+        }
+
+        .legal-section p {
+            color: var(--tech-text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .legal-section ul {
+            color: var(--tech-text-secondary);
+            margin-left: 1.5rem;
+        }
+
+        .legal-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--tech-border);
+            padding: 3rem 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-info h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-info p {
+            color: var(--tech-text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--tech-text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--tech-primary);
+        }
+
+        .footer-copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--tech-border);
+            color: var(--tech-text-muted);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
             }
+
+            .nav-menu {
+                position: fixed;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(15, 23, 42, 0.95);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 2rem;
+                transform: translateY(-100vh);
+                transition: transform 0.3s ease;
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+            }
+
+            .navbar {
+                padding: 1rem;
+            }
+
+            main {
+                padding: 4rem 1rem 2rem;
+            }
+
+            .legal-section {
+                padding: 1.5rem;
+            }
+
+            footer {
+                padding: 2rem 1rem 1rem;
+            }
+
+            .footer-links ul {
+                justify-content: center;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .legal-section {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .legal-section:nth-child(odd) {
+            animation-delay: 0.1s;
+        }
+
+        .legal-section:nth-child(even) {
+            animation-delay: 0.2s;
         }
     </style>
 </head>
-<body>
+<<body>
+    <!-- Particles.js container -->
+    <div id="particles-js"></div>
+
     <header>
-        <div class="navbar">
+        <nav class="navbar">
             <a href="index.html" class="navbar-brand">
                 <span class="brand-name">CLUQ AI</span>
             </a>
@@ -52,6 +408,7 @@
                         <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
                         <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
                         <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
+                        <a href="projects/citypickups.html" class="dropdown-item">City Pickups</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -61,46 +418,64 @@
                     <a href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
     
-    <section class="page-hero">
-        <div id="particles-js" class="hero-background"></div>
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="animate-fade">Allgemeine Geschäftsbedingungen</h1>
-            <p class="animate-fade">Vertragliche Rahmenbedingungen für unsere Zusammenarbeit</p>
+            <h1>Allgemeine Geschäftsbedingungen</h1>
+            <p>Vertragliche Rahmenbedingungen für unsere Zusammenarbeit</p>
         </div>
     </section>
     
     <main>
-        <section class="reveal-on-scroll">
-            <h2>1. Geltungsbereich</h2>
-            <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge, die zwischen CLUQ AI SOLUTIONS und den Kunden abgeschlossen werden.</p>
+        <section class="legal-section">
+            <h2><i class="fas fa-balance-scale"></i> Geltungsbereich</h2>
+            <p>Diese Allgemeinen Geschäftsbedingungen (nachfolgend "AGB") gelten für alle Geschäftsbeziehungen zwischen CLUQ AI SOLUTIONS (nachfolgend "Anbieter") und seinen Kunden (nachfolgend "Kunde"). Sie regeln die Rechte und Pflichten beider Parteien bei der Erbringung von KI-Entwicklungsdienstleistungen, Beratung und technologischen Lösungen.</p>
+            <p>Diese AGB gelten ausschließlich. Entgegenstehende oder von diesen AGB abweichende Bedingungen des Kunden werden nur wirksam, wenn der Anbieter ausdrücklich schriftlich zugestimmt hat.</p>
         </section>
         
-        <section class="reveal-on-scroll">
-            <h2>2. Vertragsabschluss</h2>
-            <p>Der Vertrag kommt zustande, wenn der Kunde das Angebot von CLUQ AI SOLUTIONS annimmt.</p>
+        <section class="legal-section">
+            <h2><i class="fas fa-handshake"></i> Vertragsabschluss und Leistungsumfang</h2>
+            <p>Der Vertrag kommt durch die schriftliche Bestätigung des Angebots durch den Kunden oder durch die Auftragsbestätigung des Anbieters zustande. Alle Angebote sind freibleibend und unverbindlich, sofern nicht ausdrücklich als verbindlich bezeichnet.</p>
+            <p>Der Leistungsumfang ergibt sich aus der jeweiligen Auftragsbestätigung und den beigefügten Spezifikationen. Änderungen des Leistungsumfangs bedürfen der schriftlichen Vereinbarung.</p>
         </section>
         
-        <section class="reveal-on-scroll">
-            <h2>3. Preise und Zahlungsbedingungen</h2>
-            <p>Die Preise sind in Euro angegeben und verstehen sich zuzüglich der gesetzlichen Mehrwertsteuer.</p>
+        <section class="legal-section">
+            <h2><i class="fas fa-euro-sign"></i> Preise und Zahlungsbedingungen</h2>
+            <p>Alle Preise verstehen sich netto zuzüglich der gesetzlichen Mehrwertsteuer in ihrer jeweils gültigen Höhe. Die Rechnungsstellung erfolgt nach Leistungserbringung oder nach vereinbarten Meilensteinen.</p>
+            <p>Zahlungen sind binnen 14 Tagen nach Rechnungsstellung ohne Abzug fällig. Bei Zahlungsverzug werden Verzugszinsen in Höhe von 9 Prozentpunkten über dem Basiszinssatz berechnet.</p>
         </section>
         
-        <section class="reveal-on-scroll">
-            <h2>4. Widerrufsrecht</h2>
-            <p>Der Kunde hat das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
+        <section class="legal-section">
+            <h2><i class="fas fa-undo"></i> Widerrufsrecht</h2>
+            <p>Sofern der Kunde Verbraucher im Sinne des § 13 BGB ist, steht ihm ein Widerrufsrecht gemäß den gesetzlichen Bestimmungen zu. Bei individuell angefertigten Softwarelösungen oder bereits begonnenen Dienstleistungen kann das Widerrufsrecht ausgeschlossen sein.</p>
+            <p>Das Widerrufsrecht erlischt bei Dienstleistungen, wenn der Anbieter die Dienstleistung vollständig erbracht hat und mit der Ausführung erst begonnen hat, nachdem der Kunde dazu seine ausdrückliche Zustimmung gegeben hat.</p>
         </section>
         
-        <section class="reveal-on-scroll">
-            <h2>5. Haftung</h2>
-            <p>Die Haftung von CLUQ AI SOLUTIONS ist auf Vorsatz und grobe Fahrlässigkeit beschränkt.</p>
+        <section class="legal-section">
+            <h2><i class="fas fa-shield-alt"></i> Haftung und Gewährleistung</h2>
+            <p>Der Anbieter haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Schäden, die auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung beruhen.</p>
+            <p>Für sonstige Schäden haftet der Anbieter nur bei der Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht). In diesem Fall ist die Haftung auf den vertragstypischen, vorhersehbaren Schaden begrenzt.</p>
+            <p>Die Gewährleistung richtet sich nach den gesetzlichen Bestimmungen. Bei Softwareentwicklung wird eine angemessene Nachbesserungsfrist gewährt.</p>
         </section>
         
-        <section class="reveal-on-scroll">
-            <h2>6. Schlussbestimmungen</h2>
-            <p>Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist der Sitz von CLUQ AI SOLUTIONS.</p>
+        <section class="legal-section">
+            <h2><i class="fas fa-lock"></i> Datenschutz und Vertraulichkeit</h2>
+            <p>Der Anbieter verpflichtet sich, alle im Rahmen des Auftrags bekannt gewordenen Daten und Informationen vertraulich zu behandeln und nur zur Erfüllung des Vertrags zu verwenden.</p>
+            <p>Die Verarbeitung personenbezogener Daten erfolgt gemäß der Datenschutz-Grundverordnung (DSGVO). Nähere Informationen finden sich in der Datenschutzerklärung.</p>
+        </section>
+        
+        <section class="legal-section">
+            <h2><i class="fas fa-copyright"></i> Urheberrecht und geistiges Eigentum</h2>
+            <p>Alle entwickelten Lösungen, Quelltexte und Dokumentationen bleiben, soweit nicht anders vereinbart, geistiges Eigentum des Anbieters. Dem Kunden wird ein einfaches, nicht übertragbares Nutzungsrecht eingeräumt.</p>
+            <p>Der Kunde gewährleistet, dass die von ihm zur Verfügung gestellten Materialien und Daten keine Rechte Dritter verletzen.</p>
+        </section>
+        
+        <section class="legal-section">
+            <h2><i class="fas fa-gavel"></i> Schlussbestimmungen</h2>
+            <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Gerichtsstand für alle Streitigkeiten ist Berlin, sofern der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen ist.</p>
+            <p>Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Die unwirksame Bestimmung ist durch eine wirksame zu ersetzen, die dem gewollten Zweck am nächsten kommt.</p>
         </section>
     </main>
     
@@ -108,7 +483,9 @@
         <div class="footer-main">
             <div class="footer-info">
                 <h3>CLUQ AI SOLUTIONS</h3>
+                <p>Uhlandstr. 22, 13156 Berlin</p>
                 <p>Email: team@cluq.eu</p>
+                <p>Telefon: +49 (0) 30 123456789</p>
             </div>
             <div class="footer-links">
                 <ul>
@@ -116,6 +493,7 @@
                     <li><a href="agb.html">AGB</a></li>
                     <li><a href="impressum.html">Impressum</a></li>
                     <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -124,6 +502,29 @@
         </div>
     </footer>
 
+    <script>
+        // Particles.js configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: ["#1e40af", "#3b82f6", "#f59e0b"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.6, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1 } },
+                size: { value: 3, random: true, anim: { enable: true, speed: 4, size_min: 0.3 } },
+                line_linked: { enable: true, distance: 150, color: "#1e40af", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out", bounce: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });
+
+    </script>
+    
+    <!-- Main JavaScript for interactive functionality -->
     <script src="js/main.js"></script>
 </body>
 </html>

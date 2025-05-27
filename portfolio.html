@@ -7,20 +7,587 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Portfolio - CLUQ AI SOLUTIONS</title>
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/responsive.css?v=1.1">
+    <title>Portfolio - CLUQ AI SOLUTIONS | Advanced AI Technology Solutions</title>
+    <meta name="description" content="Explore CLUQ AI SOLUTIONS' innovative portfolio of AI-powered projects including TreasureBot, Fashion AI, and cutting-edge delivery platforms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="css/responsive.css?v=2.0">
     <!-- Particles.js library for the interactive background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        html {
-            zoom: 0.9;
+        /* Advanced High-Tech Styling */
+        :root {
+            --tech-primary: #0A0E27;
+            --tech-secondary: #1E293B;
+            --tech-accent: #0EA5E9;
+            --tech-accent-bright: #38BDF8;
+            --tech-success: #10B981;
+            --tech-warning: #F59E0B;
+            --tech-error: #EF4444;
+            --tech-purple: #8B5CF6;
+            
+            --text-primary: #FFFFFF;
+            --text-secondary: #CBD5E1;
+            --text-muted: #64748B;
+            --text-dark: #1E293B;
+            
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.3);
+            --shadow-strong: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
         }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            body {
-                zoom: 0.9;
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-primary);
+            color: var(--text-secondary);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Enhanced Navbar */
+        .navbar {
+            background: rgba(10, 14, 39, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .brand-name {
+            background: linear-gradient(135deg, var(--tech-accent-bright), var(--tech-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: -0.02em;
+        }
+
+        /* Page Hero Section */
+        .page-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 100%);
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--tech-accent-bright));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        /* Particles Background */
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        /* Portfolio Grid */
+        .portfolio {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .portfolio > h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio > p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-item-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .portfolio-item {
+            background: rgba(22, 33, 62, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(14, 165, 233, 0.4);
+            border-color: var(--tech-accent);
+            background: rgba(22, 33, 62, 1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+            filter: brightness(1.1) contrast(1.1);
+        }
+
+        /* Add image overlay for better text contrast */
+        .portfolio-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 250px;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 14, 26, 0.1) 0%,
+                rgba(10, 14, 26, 0.3) 50%,
+                rgba(10, 14, 26, 0.7) 100%
+            );
+            z-index: 1;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover::before {
+            opacity: 0.8;
+        }
+
+        .external-link-icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #38BDF8;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 5;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .external-link-icon:hover {
+            background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-bright));
+            color: #FFFFFF;
+            transform: scale(1.1);
+            border-color: var(--tech-accent-bright);
+            box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+        }
+
+        .external-link-icon i {
+            font-size: 1rem;
+        }
+
+        .portfolio-item-content {
+            padding: 2.5rem 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+        }
+
+        .portfolio-item-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-item-content p {
+            color: #E2E8F0;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            flex-grow: 1;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .portfolio-tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .portfolio-tech-tag {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(56, 189, 248, 0.1));
+            color: #38BDF8;
+            padding: 0.6rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .portfolio-tech-tag:hover {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.3), rgba(56, 189, 248, 0.2));
+            border-color: rgba(56, 189, 248, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+        }
+
+        .portfolio-tech-tag i {
+            font-size: 0.9rem;
+            color: #60A5FA;
+        }
+
+        .view-details-link {
+            color: #38BDF8;
+            font-weight: 700;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(56, 189, 248, 0.05));
+            border-radius: 12px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            margin-top: auto;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-item:hover .view-details-link {
+            color: #FFFFFF;
+            background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-bright));
+            border-color: var(--tech-accent-bright);
+            transform: translateX(4px);
+            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+        }
+
+        .view-details-link i {
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .view-details-link i {
+            transform: translateX(4px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--tech-secondary), var(--tech-primary));
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .cta-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .cta-button-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-bright));
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-strong);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+            background: linear-gradient(135deg, var(--tech-accent-bright), var(--tech-purple));
+        }
+
+        /* Enhanced Footer */
+        footer {
+            background: var(--tech-primary);
+            border-top: 1px solid var(--glass-border);
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 2rem;
+        }
+
+        .footer-info h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            background: linear-gradient(135deg, var(--tech-accent-bright), var(--tech-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-info p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--tech-accent-bright);
+        }
+
+        .footer-copyright {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Animations */
+        .animate-fade {
+            animation: fadeInUp 1.5s ease-out forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal-on-scroll.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .portfolio-item-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .portfolio-item-content h3 {
+                font-size: 1.4rem;
+            }
+
+            .portfolio-tech-tags {
+                gap: 0.5rem;
+            }
+
+            .portfolio-tech-tag {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.85rem;
+            }
+
+            .view-details-link {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .external-link-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .external-link-icon i {
+                font-size: 0.9rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .portfolio {
+                padding: 4rem 1rem;
+            }
+
+            .portfolio > h1 {
+                font-size: 2rem;
+            }
+
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+
+            .cta-content p {
+                font-size: 1.1rem;
+            }
+            
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .footer-links ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
             }
         }
     </style>
@@ -52,6 +619,7 @@
                         <a href="projects/globalpickups.html" class="dropdown-item">Global Pickups</a>
                         <a href="projects/personaldataplatform.html" class="dropdown-item">Personal Data Platform</a>
                         <a href="projects/anmeldungdigital.html" class="dropdown-item">Anmeldung Digital</a>
+                        <a href="projects/citypickups.html" class="dropdown-item">City Pickups</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -67,151 +635,158 @@
     <section class="page-hero">
         <div id="particles-js" class="hero-background"></div>
         <div class="hero-content">
-            <h1 class="animate-fade">Our Portfolio</h1>
-            <p class="animate-fade">Explore our innovative AI solutions for community building, sustainability, and public services.</p>
+            <h1 class="animate-fade">Innovation Portfolio</h1>
+            <p class="animate-fade">Discover our cutting-edge AI solutions that are transforming industries and empowering communities through advanced technology.</p>
         </div>
     </section>
     
     <main>
         <section class="portfolio">
-            <h1>Our Projects</h1>
-            <p>Discover our innovative AI solutions that are transforming industries</p>
+            <h1>Featured Projects</h1>
+            <p>Explore our comprehensive portfolio of AI-powered innovations designed to solve real-world challenges</p>
             
             <div class="portfolio-grid reveal-on-scroll">
                 <!-- TreasureBot -->
-                <a href="projects/treasurebot.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
+                <a href="projects/treasurebot.html" class="portfolio-item-link">
                     <div class="portfolio-item">
-                        <img src="assets/Treasurebot.png" alt="TreasureBot">
-                        <div class="external-link-icon" onclick="window.open('https://treasurebot.eu/', '_blank')">
+                        <img src="assets/Treasurebot.png" alt="TreasureBot - AI-powered autonomous waste management system">
+                        <div class="external-link-icon" onclick="event.preventDefault(); window.open('https://treasurebot.eu/', '_blank')">
                             <i class="fas fa-external-link-alt"></i>
                         </div>
                         <div class="portfolio-item-content">
                             <h3>TreasureBot</h3>
-                            <p>AI-powered autonomous waste management system</p>
+                            <p>Revolutionary AI-powered autonomous waste management system that transforms urban cleanliness through intelligent robotics and computer vision technology.</p>
                             <div class="portfolio-tech-tags">
                                 <span class="portfolio-tech-tag"><i class="fas fa-robot"></i> Robotics</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI/ML</span>
                                 <span class="portfolio-tech-tag"><i class="fas fa-camera"></i> Computer Vision</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-recycle"></i> Sustainability</span>
                             </div>
                             <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
+                                Explore Project <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 
                 <!-- Fashion AI -->
-                <a href="projects/fashionai.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
+                <a href="projects/fashionai.html" class="portfolio-item-link">
                     <div class="portfolio-item">
-                        <img src="assets/fassionai.png" alt="Fashion AI">
+                        <img src="assets/fassionai.png" alt="Fashion AI - Personalized styling platform">
                         <div class="portfolio-item-content">
                             <h3>Fashion AI</h3>
-                            <p>AI-powered personalized styling platform</p>
+                            <p>Next-generation AI-powered personalized styling platform that revolutionizes fashion discovery through advanced machine learning algorithms.</p>
                             <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-tshirt"></i> Fashion</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-mobile-alt"></i> Mobile</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-tshirt"></i> Fashion Tech</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> Deep Learning</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-mobile-alt"></i> Mobile App</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-user"></i> Personalization</span>
                             </div>
                             <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
+                                Explore Project <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 
                 <!-- Maximize CV -->
-                <a href="projects/maximizecv.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
+                <a href="projects/maximizecv.html" class="portfolio-item-link">
                     <div class="portfolio-item">
-                        <img src="assets/Tailoredapply.png" alt="Maximize CV">
+                        <img src="assets/Tailoredapply.png" alt="Maximize CV - AI-powered resume optimization">
                         <div class="portfolio-item-content">
                             <h3>Maximize CV</h3>
-                            <p>AI-powered resume optimization tool</p>
+                            <p>Intelligent AI-driven resume optimization tool that enhances career prospects through advanced natural language processing and analytics.</p>
                             <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-file-alt"></i> CV</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-file-alt"></i> Resume Tech</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> NLP</span>
                                 <span class="portfolio-tech-tag"><i class="fas fa-chart-line"></i> Analytics</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-briefcase"></i> Career</span>
                             </div>
                             <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
+                                Explore Project <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 
                 <!-- Global Pickups -->
-                <a href="projects/globalpickups.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
+                <a href="projects/globalpickups.html" class="portfolio-item-link">
                     <div class="portfolio-item">
-                        <img src="assets/globalpickups.png" alt="Global Pickups">
-                        <div class="external-link-icon" onclick="window.open('https://globalpickups.com/', '_blank')">
+                        <img src="assets/globalpickups.png" alt="Global Pickups - Peer-to-peer delivery platform">
+                        <div class="external-link-icon" onclick="event.preventDefault(); window.open('https://globalpickups.com/', '_blank')">
                             <i class="fas fa-external-link-alt"></i>
                         </div>
                         <div class="portfolio-item-content">
                             <h3>Global Pickups</h3>
-                            <p>Peer-to-peer delivery platform</p>
+                            <p>Advanced peer-to-peer delivery platform leveraging AI optimization for efficient logistics and community-driven transportation solutions.</p>
                             <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-truck"></i> Delivery</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-users"></i> P2P</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-map-marker-alt"></i> Location</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-truck"></i> Logistics</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-users"></i> P2P Network</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-map-marker-alt"></i> Geolocation</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-route"></i> Route Optimization</span>
                             </div>
                             <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
+                                Explore Project <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 
                 <!-- Personal Data Platform -->
-                <a href="projects/personaldataplatform.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
+                <a href="projects/personaldataplatform.html" class="portfolio-item-link">
                     <div class="portfolio-item">
-                        <img src="assets/personaldata.png" alt="Personal Data Platform">
+                        <img src="assets/personaldata.png" alt="Personal Data Platform - Secure data management">
                         <div class="portfolio-item-content">
                             <h3>Personal Data Platform</h3>
-                            <p>Secure AI-driven personal data management solution</p>
+                            <p>Secure AI-driven personal data management solution ensuring privacy protection and intelligent data organization for individuals and organizations.</p>
                             <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-shield-alt"></i> Security</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-database"></i> Data</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-database"></i> Data Management</span>
                                 <span class="portfolio-tech-tag"><i class="fas fa-lock"></i> Privacy</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-key"></i> Encryption</span>
                             </div>
                             <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
+                                Explore Project <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 
                 <!-- Anmeldung Digital -->
-                <a href="projects/anmeldungdigital.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
+                <a href="projects/anmeldungdigital.html" class="portfolio-item-link">
                     <div class="portfolio-item">
-                        <img src="assets/Anmeldungassist.png" alt="Anmeldung Digital">
+                        <img src="assets/Anmeldungassist.png" alt="Anmeldung Digital - AI registration system">
                         <div class="portfolio-item-content">
                             <h3>Anmeldung Digital</h3>
-                            <p>AI-powered digital registration system</p>
+                            <p>Sophisticated AI-powered digital registration system streamlining bureaucratic processes through optical character recognition and natural language processing.</p>
                             <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-file-invoice"></i> OCR</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-file-invoice"></i> OCR Technology</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-brain"></i> AI Processing</span>
                                 <span class="portfolio-tech-tag"><i class="fas fa-language"></i> NLP</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-cogs"></i> Automation</span>
                             </div>
                             <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
+                                Explore Project <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 
                 <!-- City Pickups -->
-                <a href="projects/citypickups.html" class="portfolio-item-link" style="text-decoration: none; color: inherit;">
+                <a href="projects/citypickups.html" class="portfolio-item-link">
                     <div class="portfolio-item">
-                        <img src="assets/citypickups.png" alt="City Pickups">
+                        <img src="assets/citypickups.png" alt="City Pickups - Community delivery platform">
                         <div class="portfolio-item-content">
                             <h3>City Pickups</h3>
-                            <p>Community-driven peer-to-peer delivery platform</p>
+                            <p>Community-driven peer-to-peer delivery platform fostering local connections and sustainable transportation through intelligent matching algorithms.</p>
                             <div class="portfolio-tech-tags">
-                                <span class="portfolio-tech-tag"><i class="fas fa-truck"></i> Delivery</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-users"></i> P2P</span>
-                                <span class="portfolio-tech-tag"><i class="fas fa-map-marker-alt"></i> Community</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-city"></i> Urban Solutions</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-users"></i> Community</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-leaf"></i> Sustainability</span>
+                                <span class="portfolio-tech-tag"><i class="fas fa-network-wired"></i> Network Effects</span>
                             </div>
                             <div class="view-details-link">
-                                View Details <i class="fas fa-arrow-right"></i>
+                                Explore Project <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
@@ -222,11 +797,14 @@
     
     <section class="cta-section">
         <div class="cta-content">
-            <h2>Ready to take your organization to the next level?</h2>
-            <p>Contact us today to discuss how we can help you leverage AI technology.</p>
+            <h2>Ready to Transform Your Vision into Reality?</h2>
+            <p>Partner with CLUQ AI SOLUTIONS to develop cutting-edge AI solutions tailored to your unique challenges. Let's build the future together.</p>
         </div>
         <div class="cta-button-container">
-            <a href="contact.html" class="cta-button">Get in Touch</a>
+            <a href="contact.html" class="cta-button">
+                <i class="fas fa-rocket"></i>
+                Start Your Project
+            </a>
         </div>
     </section>
     
@@ -234,22 +812,81 @@
         <div class="footer-main">
             <div class="footer-info">
                 <h3>CLUQ AI SOLUTIONS</h3>
-                <p>Email: team@cluq.eu</p>
+                <p><i class="fas fa-envelope"></i> team@cluq.eu</p>
+                <p><i class="fas fa-phone"></i> Available for consultation</p>
+                <p><i class="fas fa-clock"></i> Response within 24 hours</p>
             </div>
             <div class="footer-links">
                 <ul>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="agb.html">AGB</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="agb.html">Terms</a></li>
+                    <li><a href="impressum.html">Legal</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-copyright">
-            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved.</p>
+            <p>&copy; 2025 CLUQ AI SOLUTIONS. All rights reserved. | Transforming Tomorrow Through Technology</p>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Initialize particles.js
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 50, density: { enable: true, value_area: 800 } },
+                    color: { value: ["#0EA5E9", "#38BDF8", "#8B5CF6"] },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.6, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#0EA5E9",
+                        opacity: 0.2,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "repulse" },
+                        onclick: { enable: true, mode: "push" },
+                        resize: true
+                    }
+                },
+                retina_detect: true
+            });
+        }
+
+        // Scroll reveal animation
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('.reveal-on-scroll');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('revealed');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+    </script>
 </body>
 </html>
