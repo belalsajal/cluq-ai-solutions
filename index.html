@@ -80,6 +80,7 @@
             position: relative;
             background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 100%);
             overflow: hidden;
+            padding-top: 80px; /* Account for fixed header */
         }
 
         .hero::before {
@@ -101,8 +102,26 @@
             z-index: 2;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 2rem 2rem;
             text-align: center;
+            padding-top: 120px; /* Account for fixed header */
+        }
+
+        /* Hero Badge Styling */
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--tech-accent), var(--tech-purple));
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
         }
 
         .hero h1 {
@@ -116,6 +135,92 @@
             margin-bottom: 1.5rem;
             letter-spacing: -0.02em;
             line-height: 1.1;
+        }
+
+        /* Hero Badge responsive adjustments */
+        @media (max-width: 1024px) {
+            .hero-content {
+                padding-top: 110px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 100vh;
+                padding-top: 60px;
+            }
+            
+            .hero-badge {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .hero-content {
+                padding-top: 80px; /* Reduced for mobile */
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: clamp(2rem, 8vw, 3rem) !important;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding-top: 50px;
+            }
+            
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.6rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .hero-content {
+                padding-top: 60px; /* Further reduced for very small screens */
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: clamp(1.5rem, 10vw, 2.5rem) !important;
+                margin-bottom: 0.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .hero-tagline {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .hero-content {
+                padding-top: 50px;
+            }
+            
+            .hero-badge {
+                font-size: 0.7rem;
+                padding: 0.25rem 0.5rem;
+            }
         }
 
         .hero-subtitle {
@@ -327,7 +432,7 @@
         <div id="particles-js" class="hero-background"></div>
         <div class="hero-content">
             <div style="margin-bottom: 1rem;">
-                <span style="background: linear-gradient(135deg, var(--tech-accent), var(--tech-purple)); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600; color: white; text-transform: uppercase; letter-spacing: 0.5px;">Advanced AI Solutions</span>
+                <span class="hero-badge">Advanced AI Solutions</span>
             </div>
             <h1 class="animate-fade">Transforming Tomorrow with Intelligent Technology</h1>
             <p class="hero-subtitle animate-fade">We engineer cutting-edge artificial intelligence solutions that solve real-world challenges. From autonomous systems to data intelligence, we're building the infrastructure for a smarter future.</p>

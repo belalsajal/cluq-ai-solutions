@@ -400,6 +400,48 @@ function fixHeaderStyling() {
             link.style.display = 'flex';
         });
     }
+    
+    // Add hero section viewport adjustments
+    adjustHeroSection();
+}
+
+/**
+ * Adjust hero section for proper viewport display
+ */
+function adjustHeroSection() {
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+    
+    // Fix viewport height calculation for mobile devices
+    const updateViewportHeight = () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        
+        // Ensure hero content is visible
+        const heroContent = hero.querySelector('.hero-content');
+        if (heroContent) {
+            const headerHeight = document.querySelector('header')?.offsetHeight || 80;
+            const minTopPadding = headerHeight + 20; // Add some extra space
+            
+            // Adjust top padding based on screen size
+            if (window.innerWidth <= 480) {
+                heroContent.style.paddingTop = `${Math.max(minTopPadding - 30, 50)}px`;
+            } else if (window.innerWidth <= 768) {
+                heroContent.style.paddingTop = `${Math.max(minTopPadding - 20, 60)}px`;
+            } else {
+                heroContent.style.paddingTop = `${minTopPadding + 20}px`;
+            }
+        }
+    };
+    
+    // Initial call
+    updateViewportHeight();
+    
+    // Update on resize and orientation change
+    window.addEventListener('resize', updateViewportHeight);
+    window.addEventListener('orientationchange', () => {
+        setTimeout(updateViewportHeight, 100);
+    });
 }
 
 /**
